@@ -1,0 +1,187 @@
+# NMS Development Configuration
+
+server:
+  port: 8080
+  host: 0.0.0.0
+  mode: debug # debug, release
+  read_timeout: 30s
+  write_timeout: 30s
+  max_header_bytes: 1048576
+
+database:
+  postgres:
+    host: localhost
+    port: 5432
+    database: nms_dev
+    user: nms_user
+    password: password
+    ssl_mode: disable
+    max_open_conns: 100
+    max_idle_conns: 10
+    conn_max_lifetime: 3600s
+    log_level: info # silent, error, warn, info
+
+  influxdb:
+    url: http://localhost:8086
+    token: your-influxdb-token
+    org: nms
+    bucket: metrics
+    timeout: 30s
+    batch_size: 1000
+    flush_interval: 10s
+
+  redis:
+    addr: localhost:6379
+    password: ""
+    db: 0
+    pool_size: 10
+    min_idle_conns: 5
+    dial_timeout: 5s
+    read_timeout: 3s
+    write_timeout: 3s
+
+messagequeue:
+  nats:
+    url: nats://localhost:4222
+    max_reconnect: 10
+    reconnect_wait: 2s
+    timeout: 5s
+
+  # Alternative: RabbitMQ
+  # rabbitmq:
+  #   url: amqp://guest:guest@localhost:5672/
+  #   exchange: nms_exchange
+  #   queue_prefix: nms_
+
+collector:
+  enabled: true
+  worker_count: 10
+  batch_size: 100
+  polling_interval: 60s # default polling interval
+  max_concurrent_tasks: 1000
+  task_timeout: 30s
+
+worker:
+  enabled: true
+  concurrency: 20
+  prefetch_count: 5
+  retry_attempts: 3
+  retry_delay: 5s
+  connection_timeout: 15s
+
+alert:
+  enabled: true
+  evaluation_interval: 30s
+  batch_size: 100
+
+notification:
+  enabled: true
+  
+  email:
+    enabled: true
+    smtp_host: smtp.gmail.com
+    smtp_port: 587
+    username: your-email@gmail.com
+    password: your-app-password
+    from: NMS Alert <noreply@nms.local>
+    use_tls: true
+  
+  telegram:
+    enabled: false
+    bot_token: your-telegram-bot-token
+    default_chat_id: ""
+  
+  webhook:
+    enabled: true
+    timeout: 10s
+  
+  sms:
+    enabled: false
+    provider: twilio
+    account_sid: ""
+    auth_token: ""
+    from_number: ""
+
+security:
+  jwt:
+    secret: your-jwt-secret-key-change-in-production
+    expires_in: 24h
+    refresh_expires_in: 168h # 7 days
+  
+  encryption:
+    key: your-32-character-encryption-key-change-in-production # Must be 32 chars for AES-256
+  
+  password:
+    min_length: 8
+    require_uppercase: true
+    require_lowercase: true
+    require_number: true
+    require_special: true
+  
+  rate_limit:
+    enabled: true
+    requests_per_second: 100
+    burst: 200
+
+logging:
+  level: debug # debug, info, warn, error
+  format: json # json, console
+  output: stdout # stdout, file
+  file_path: logs/nms.log
+  max_size: 100 # megabytes
+  max_backups: 3
+  max_age: 28 # days
+  compress: true
+
+monitoring:
+  enabled: true
+  prometheus:
+    enabled: true
+    port: 9090
+    path: /metrics
+  
+  health_check:
+    enabled: true
+    port: 8081
+    path: /health
+
+cors:
+  enabled: true
+  allowed_origins:
+    - http://localhost:3000
+    - http://localhost:8080
+  allowed_methods:
+    - GET
+    - POST
+    - PUT
+    - DELETE
+    - OPTIONS
+  allowed_headers:
+    - Origin
+    - Content-Type
+    - Authorization
+  expose_headers:
+    - Content-Length
+  allow_credentials: true
+  max_age: 3600
+
+features:
+  auto_discovery:
+    enabled: false
+    scan_interval: 3600s
+    scan_ranges:
+      - 192.168.1.0/24
+  
+  config_backup:
+    enabled: true
+    auto_backup_interval: 86400s # daily
+    retention_days: 30
+  
+  analytics:
+    enabled: true
+    aggregation_interval: 300s # 5 minutes
+    retention_policy:
+      raw_data: 7d
+      aggregated_5m: 30d
+      aggregated_1h: 90d
+      aggregated_1d: 1y
