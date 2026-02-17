@@ -1,0 +1,4530 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<w:document mc:Ignorable="w14 w15 wp14" xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" xmlns:cx="http://schemas.microsoft.com/office/drawing/2014/chartex" xmlns:cx1="http://schemas.microsoft.com/office/drawing/2015/9/8/chartex" xmlns:cx2="http://schemas.microsoft.com/office/drawing/2015/10/21/chartex" xmlns:cx3="http://schemas.microsoft.com/office/drawing/2016/5/9/chartex" xmlns:cx4="http://schemas.microsoft.com/office/drawing/2016/5/10/chartex" xmlns:cx5="http://schemas.microsoft.com/office/drawing/2016/5/11/chartex" xmlns:cx6="http://schemas.microsoft.com/office/drawing/2016/5/12/chartex" xmlns:cx7="http://schemas.microsoft.com/office/drawing/2016/5/13/chartex" xmlns:cx8="http://schemas.microsoft.com/office/drawing/2016/5/14/chartex" xmlns:aink="http://schemas.microsoft.com/office/drawing/2016/ink" xmlns:am3d="http://schemas.microsoft.com/office/drawing/2017/model3d" xmlns:w16cex="http://schemas.microsoft.com/office/word/2018/wordml/cex" xmlns:w16cid="http://schemas.microsoft.com/office/word/2016/wordml/cid" xmlns:w16="http://schemas.microsoft.com/office/word/2018/wordml" xmlns:w16sdtdh="http://schemas.microsoft.com/office/word/2020/wordml/sdtdatahash" xmlns:w16se="http://schemas.microsoft.com/office/word/2015/wordml/symex">
+<w:body>
+<w:p>
+<w:pPr>
+<w:spacing w:before="2880" w:after="480"/>
+<w:jc w:val="center"/>
+</w:pPr>
+<w:r>
+<w:rPr>
+<w:b/>
+<w:bCs/>
+<w:color w:val="2E75B6"/>
+<w:sz w:val="48"/>
+<w:szCs w:val="48"/>
+</w:rPr>
+<w:t xml:space="preserve">NETWORK MANAGEMENT SYSTEM</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:spacing w:after="240"/>
+<w:jc w:val="center"/>
+</w:pPr>
+<w:r>
+<w:rPr>
+<w:b/>
+<w:bCs/>
+<w:sz w:val="32"/>
+<w:szCs w:val="32"/>
+</w:rPr>
+<w:t xml:space="preserve">Software Requirements Specification</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:spacing w:after="1440"/>
+<w:jc w:val="center"/>
+</w:pPr>
+<w:r>
+<w:rPr>
+<w:sz w:val="28"/>
+<w:szCs w:val="28"/>
+</w:rPr>
+<w:t xml:space="preserve">Version 1.0</w:t>
+</w:r>
+</w:p>
+<w:tbl>
+<w:tblPr>
+<w:tblW w:type="dxa" w:w="9360"/>
+<w:tblBorders>
+<w:top w:val="single" w:color="auto" w:sz="4"/>
+<w:left w:val="single" w:color="auto" w:sz="4"/>
+<w:bottom w:val="single" w:color="auto" w:sz="4"/>
+<w:right w:val="single" w:color="auto" w:sz="4"/>
+<w:insideH w:val="single" w:color="auto" w:sz="4"/>
+<w:insideV w:val="single" w:color="auto" w:sz="4"/>
+</w:tblBorders>
+</w:tblPr>
+<w:tblGrid>
+<w:gridCol w:w="3120"/>
+<w:gridCol w:w="6240"/>
+</w:tblGrid>
+<w:tr>
+<w:tc>
+<w:tcPr>
+<w:tcW w:type="dxa" w:w="3120"/>
+<w:tcBorders>
+<w:top w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:left w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:bottom w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:right w:val="single" w:color="CCCCCC" w:sz="1"/>
+</w:tcBorders>
+<w:shd w:fill="D5E8F0" w:val="clear"/>
+<w:tcMar>
+<w:top w:type="dxa" w:w="80"/>
+<w:left w:type="dxa" w:w="120"/>
+<w:bottom w:type="dxa" w:w="80"/>
+<w:right w:type="dxa" w:w="120"/>
+</w:tcMar>
+</w:tcPr>
+<w:p>
+<w:r>
+<w:rPr>
+<w:b/>
+<w:bCs/>
+</w:rPr>
+<w:t xml:space="preserve">Project Name</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:type="dxa" w:w="6240"/>
+<w:tcBorders>
+<w:top w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:left w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:bottom w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:right w:val="single" w:color="CCCCCC" w:sz="1"/>
+</w:tcBorders>
+<w:tcMar>
+<w:top w:type="dxa" w:w="80"/>
+<w:left w:type="dxa" w:w="120"/>
+<w:bottom w:type="dxa" w:w="80"/>
+<w:right w:type="dxa" w:w="120"/>
+</w:tcMar>
+</w:tcPr>
+<w:p>
+<w:r>
+<w:t xml:space="preserve">Network Management System (NMS)</w:t>
+</w:r>
+</w:p>
+</w:tc>
+</w:tr>
+<w:tr>
+<w:tc>
+<w:tcPr>
+<w:tcW w:type="dxa" w:w="3120"/>
+<w:tcBorders>
+<w:top w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:left w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:bottom w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:right w:val="single" w:color="CCCCCC" w:sz="1"/>
+</w:tcBorders>
+<w:shd w:fill="D5E8F0" w:val="clear"/>
+<w:tcMar>
+<w:top w:type="dxa" w:w="80"/>
+<w:left w:type="dxa" w:w="120"/>
+<w:bottom w:type="dxa" w:w="80"/>
+<w:right w:type="dxa" w:w="120"/>
+</w:tcMar>
+</w:tcPr>
+<w:p>
+<w:r>
+<w:rPr>
+<w:b/>
+<w:bCs/>
+</w:rPr>
+<w:t xml:space="preserve">Document Version</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:type="dxa" w:w="6240"/>
+<w:tcBorders>
+<w:top w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:left w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:bottom w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:right w:val="single" w:color="CCCCCC" w:sz="1"/>
+</w:tcBorders>
+<w:tcMar>
+<w:top w:type="dxa" w:w="80"/>
+<w:left w:type="dxa" w:w="120"/>
+<w:bottom w:type="dxa" w:w="80"/>
+<w:right w:type="dxa" w:w="120"/>
+</w:tcMar>
+</w:tcPr>
+<w:p>
+<w:r>
+<w:t xml:space="preserve">1.0</w:t>
+</w:r>
+</w:p>
+</w:tc>
+</w:tr>
+<w:tr>
+<w:tc>
+<w:tcPr>
+<w:tcW w:type="dxa" w:w="3120"/>
+<w:tcBorders>
+<w:top w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:left w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:bottom w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:right w:val="single" w:color="CCCCCC" w:sz="1"/>
+</w:tcBorders>
+<w:shd w:fill="D5E8F0" w:val="clear"/>
+<w:tcMar>
+<w:top w:type="dxa" w:w="80"/>
+<w:left w:type="dxa" w:w="120"/>
+<w:bottom w:type="dxa" w:w="80"/>
+<w:right w:type="dxa" w:w="120"/>
+</w:tcMar>
+</w:tcPr>
+<w:p>
+<w:r>
+<w:rPr>
+<w:b/>
+<w:bCs/>
+</w:rPr>
+<w:t xml:space="preserve">Date</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:type="dxa" w:w="6240"/>
+<w:tcBorders>
+<w:top w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:left w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:bottom w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:right w:val="single" w:color="CCCCCC" w:sz="1"/>
+</w:tcBorders>
+<w:tcMar>
+<w:top w:type="dxa" w:w="80"/>
+<w:left w:type="dxa" w:w="120"/>
+<w:bottom w:type="dxa" w:w="80"/>
+<w:right w:type="dxa" w:w="120"/>
+</w:tcMar>
+</w:tcPr>
+<w:p>
+<w:r>
+<w:t xml:space="preserve">February 2026</w:t>
+</w:r>
+</w:p>
+</w:tc>
+</w:tr>
+<w:tr>
+<w:tc>
+<w:tcPr>
+<w:tcW w:type="dxa" w:w="3120"/>
+<w:tcBorders>
+<w:top w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:left w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:bottom w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:right w:val="single" w:color="CCCCCC" w:sz="1"/>
+</w:tcBorders>
+<w:shd w:fill="D5E8F0" w:val="clear"/>
+<w:tcMar>
+<w:top w:type="dxa" w:w="80"/>
+<w:left w:type="dxa" w:w="120"/>
+<w:bottom w:type="dxa" w:w="80"/>
+<w:right w:type="dxa" w:w="120"/>
+</w:tcMar>
+</w:tcPr>
+<w:p>
+<w:r>
+<w:rPr>
+<w:b/>
+<w:bCs/>
+</w:rPr>
+<w:t xml:space="preserve">Technology Stack</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:type="dxa" w:w="6240"/>
+<w:tcBorders>
+<w:top w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:left w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:bottom w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:right w:val="single" w:color="CCCCCC" w:sz="1"/>
+</w:tcBorders>
+<w:tcMar>
+<w:top w:type="dxa" w:w="80"/>
+<w:left w:type="dxa" w:w="120"/>
+<w:bottom w:type="dxa" w:w="80"/>
+<w:right w:type="dxa" w:w="120"/>
+</w:tcMar>
+</w:tcPr>
+<w:p>
+<w:r>
+<w:t xml:space="preserve">Go (Golang)</w:t>
+</w:r>
+</w:p>
+</w:tc>
+</w:tr>
+</w:tbl>
+<w:p>
+<w:r>
+<w:br w:type="page"/>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="Heading1"/>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">Daftar Isi</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:r>
+<w:t xml:space="preserve">1. Pendahuluan</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:r>
+<w:t xml:space="preserve">2. Deskripsi Umum</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:r>
+<w:t xml:space="preserve">3. Kebutuhan Fungsional</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:r>
+<w:t xml:space="preserve">4. Kebutuhan Non-Fungsional</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:r>
+<w:t xml:space="preserve">5. Arsitektur Sistem</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:r>
+<w:t xml:space="preserve">6. Spesifikasi Teknologi</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:r>
+<w:t xml:space="preserve">7. Interface Requirements</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:r>
+<w:t xml:space="preserve">8. Database Schema</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:r>
+<w:br w:type="page"/>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="Heading1"/>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">1. Pendahuluan</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="Heading2"/>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">1.1 Tujuan Dokumen</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:r>
+<w:t xml:space="preserve">Dokumen ini menjelaskan spesifikasi kebutuhan perangkat lunak untuk Network Management System (NMS) yang dirancang untuk mengelola ribuan perangkat jaringan secara scalable dan efisien.</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="Heading2"/>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">1.2 Ruang Lingkup Sistem</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:r>
+<w:t xml:space="preserve">NMS adalah sistem manajemen jaringan yang dapat:</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">Mengumpulkan data dari perangkat jaringan secara periodik</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">Mendukung berbagai protokol: Mikrotik API, SSH, Telnet, TR-069</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">Mengelola Router, Switch, OLT, ONT, Access Point, dan perangkat wireless</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">Melakukan konfigurasi perangkat secara remote</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">Menganalisis dan mengolah data monitoring</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">Menskalakan hingga ribuan perangkat</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="Heading2"/>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">1.3 Target Pengguna</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">Network Administrator</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">NOC (Network Operations Center) Team</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">System Administrator</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">IT Manager / Supervisor</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:r>
+<w:br w:type="page"/>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="Heading1"/>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">2. Deskripsi Umum Sistem</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="Heading2"/>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">2.1 Perspektif Produk</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:r>
+<w:t xml:space="preserve">NMS adalah sistem standalone yang dapat diintegrasikan dengan sistem monitoring eksternal. Sistem ini dirancang dengan arsitektur microservices untuk kemudahan scaling dan maintenance.</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="Heading2"/>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">2.2 Fungsi Utama Produk</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:r>
+<w:rPr>
+<w:b/>
+<w:bCs/>
+</w:rPr>
+<w:t xml:space="preserve">Device Discovery &amp; Inventory Management</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:r>
+<w:t xml:space="preserve">Sistem dapat secara otomatis menemukan dan mencatat perangkat jaringan dalam database inventory.</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:spacing w:before="240"/>
+</w:pPr>
+</w:p>
+<w:p>
+<w:r>
+<w:rPr>
+<w:b/>
+<w:bCs/>
+</w:rPr>
+<w:t xml:space="preserve">Data Collection</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:r>
+<w:t xml:space="preserve">Mengumpulkan metrics seperti CPU usage, memory usage, bandwidth, interface status, temperature, dan custom metrics dari berbagai jenis perangkat.</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:spacing w:before="240"/>
+</w:pPr>
+</w:p>
+<w:p>
+<w:r>
+<w:rPr>
+<w:b/>
+<w:bCs/>
+</w:rPr>
+<w:t xml:space="preserve">Configuration Management</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:r>
+<w:t xml:space="preserve">Melakukan konfigurasi perangkat, backup konfigurasi, rollback, dan version control.</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:spacing w:before="240"/>
+</w:pPr>
+</w:p>
+<w:p>
+<w:r>
+<w:rPr>
+<w:b/>
+<w:bCs/>
+</w:rPr>
+<w:t xml:space="preserve">Monitoring &amp; Alerting</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:r>
+<w:t xml:space="preserve">Real-time monitoring dengan threshold-based alerting melalui berbagai channel (email, telegram, webhook).</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:spacing w:before="240"/>
+</w:pPr>
+</w:p>
+<w:p>
+<w:r>
+<w:rPr>
+<w:b/>
+<w:bCs/>
+</w:rPr>
+<w:t xml:space="preserve">Reporting &amp; Analytics</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:r>
+<w:t xml:space="preserve">Dashboard visualisasi data, historical reports, dan trend analysis.</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:r>
+<w:br w:type="page"/>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="Heading1"/>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">3. Kebutuhan Fungsional</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="Heading2"/>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">3.1 Device Management</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="Heading3"/>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">FR-001: Device Registration</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">User dapat menambahkan perangkat dengan memasukkan IP, credentials, dan device type</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">Sistem melakukan validasi koneksi sebelum menyimpan</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">Support bulk import via CSV/Excel</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:spacing w:before="240"/>
+</w:pPr>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="Heading3"/>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">FR-002: Device Discovery</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">Sistem dapat melakukan network scanning untuk menemukan perangkat baru</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">Auto-detection device type berdasarkan fingerprinting</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">Suggest credentials dari template yang tersimpan</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:spacing w:before="240"/>
+</w:pPr>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="Heading3"/>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">FR-003: Device Grouping</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">User dapat membuat group/kategori perangkat (by location, by type, custom tags)</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">Hierarchical grouping support (parent-child relationship)</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="Heading2"/>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">3.2 Data Collection</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="Heading3"/>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">FR-004: Polling Mechanism</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">Configurable polling interval per device atau per device type</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">Intelligent polling: prioritas tinggi untuk critical devices</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">Automatic retry mechanism dengan exponential backoff</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:spacing w:before="240"/>
+</w:pPr>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="Heading3"/>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">FR-005: Protocol Support</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">Mikrotik API: RouterOS devices</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">SSH: Command execution dan data parsing</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">Telnet: Legacy device support</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">TR-069/CWMP: ONT management</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">SNMP v2c/v3: Universal device support</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:spacing w:before="240"/>
+</w:pPr>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="Heading3"/>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">FR-006: Metrics Collection</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:r>
+<w:t xml:space="preserve">Data yang dikumpulkan meliputi:</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">System metrics: CPU, Memory, Disk, Uptime</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">Interface metrics: Status, Traffic In/Out, Errors, Packet Loss</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">Wireless metrics: Signal strength, Connected clients, Channel utilization</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">OLT/ONT metrics: Optical power, Distance, Error counters</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">Custom metrics: User-defined OID/command output</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="Heading2"/>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">3.3 Configuration Management</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="Heading3"/>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">FR-007: Remote Configuration</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">Execute commands pada single atau multiple devices</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">Configuration templates dengan variable substitution</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">Dry-run mode untuk preview changes</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">Approval workflow untuk critical changes</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:spacing w:before="240"/>
+</w:pPr>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="Heading3"/>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">FR-008: Config Backup &amp; Restore</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">Automatic scheduled backup</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">Manual on-demand backup</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">Config versioning dengan diff view</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">One-click rollback ke previous version</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="Heading2"/>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">3.4 Monitoring &amp; Alerting</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="Heading3"/>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">FR-009: Real-time Monitoring</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">Live dashboard dengan auto-refresh</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">Device status indicator (online/offline/degraded)</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">Interactive topology map</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:spacing w:before="240"/>
+</w:pPr>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="Heading3"/>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">FR-010: Alert Rules</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">Threshold-based alerts (CPU &gt; 80%, Memory &gt; 90%, etc)</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">Device down/up alerts</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">Interface state change alerts</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">Custom expression-based alerts</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">Alert severity levels (critical, warning, info)</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:spacing w:before="240"/>
+</w:pPr>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="Heading3"/>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">FR-011: Notification Channels</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">Email notifications</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">Telegram bot integration</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">Webhook untuk integrasi dengan sistem lain</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">SMS gateway integration (optional)</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="Heading2"/>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">3.5 Reporting</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="Heading3"/>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">FR-012: Dashboard &amp; Visualization</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">Customizable dashboard layout</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">Multiple chart types (line, bar, pie, heatmap)</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">Time range selection</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">Data export (CSV, PDF, Excel)</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:spacing w:before="240"/>
+</w:pPr>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="Heading3"/>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">FR-013: Scheduled Reports</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">Daily/weekly/monthly automated reports</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">Email delivery dengan attachment</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">Custom report templates</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:r>
+<w:br w:type="page"/>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="Heading1"/>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">4. Kebutuhan Non-Fungsional</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="Heading2"/>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">4.1 Performance Requirements</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">System harus dapat mengelola minimal 5,000 devices secara concurrent</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">Polling latency maksimal 5 detik per device pada load normal</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">API response time &lt; 200ms untuk 95% requests</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">Dashboard load time &lt; 2 detik</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">Support 1,000 concurrent web users</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="Heading2"/>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">4.2 Scalability</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">Horizontal scaling capability (add more worker nodes)</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">Database sharding support untuk data partitioning</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">Message queue untuk async processing</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">Microservices dapat di-deploy independently</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="Heading2"/>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">4.3 Reliability &amp; Availability</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">System uptime target: 99.5% (excluding planned maintenance)</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">Automatic failover untuk critical services</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">Data replication untuk disaster recovery</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">Graceful degradation saat partial system failure</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="Heading2"/>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">4.4 Security</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">Role-Based Access Control (RBAC)</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">Encrypted storage untuk credentials (AES-256)</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">TLS/SSL untuk semua network communication</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">Audit logging untuk semua configuration changes</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">API authentication dengan JWT tokens</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">Rate limiting untuk API endpoints</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="Heading2"/>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">4.5 Maintainability</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">Comprehensive logging dengan structured format</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">Health check endpoints untuk monitoring</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">Metrics export untuk observability</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">Configuration via environment variables dan config files</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:r>
+<w:br w:type="page"/>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="Heading1"/>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">5. Arsitektur Sistem</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="Heading2"/>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">5.1 Arsitektur Overview</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:r>
+<w:t xml:space="preserve">Sistem menggunakan microservices architecture dengan komponen-komponen berikut:</w:t>
+</w:r>
+</w:p>
+<w:tbl>
+<w:tblPr>
+<w:tblW w:type="dxa" w:w="9360"/>
+<w:tblBorders>
+<w:top w:val="single" w:color="auto" w:sz="4"/>
+<w:left w:val="single" w:color="auto" w:sz="4"/>
+<w:bottom w:val="single" w:color="auto" w:sz="4"/>
+<w:right w:val="single" w:color="auto" w:sz="4"/>
+<w:insideH w:val="single" w:color="auto" w:sz="4"/>
+<w:insideV w:val="single" w:color="auto" w:sz="4"/>
+</w:tblBorders>
+</w:tblPr>
+<w:tblGrid>
+<w:gridCol w:w="2340"/>
+<w:gridCol w:w="7020"/>
+</w:tblGrid>
+<w:tr>
+<w:tc>
+<w:tcPr>
+<w:tcW w:type="dxa" w:w="2340"/>
+<w:tcBorders>
+<w:top w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:left w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:bottom w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:right w:val="single" w:color="CCCCCC" w:sz="1"/>
+</w:tcBorders>
+<w:shd w:fill="2E75B6" w:val="clear"/>
+<w:tcMar>
+<w:top w:type="dxa" w:w="80"/>
+<w:left w:type="dxa" w:w="120"/>
+<w:bottom w:type="dxa" w:w="80"/>
+<w:right w:type="dxa" w:w="120"/>
+</w:tcMar>
+</w:tcPr>
+<w:p>
+<w:r>
+<w:rPr>
+<w:b/>
+<w:bCs/>
+<w:color w:val="FFFFFF"/>
+</w:rPr>
+<w:t xml:space="preserve">Component</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:type="dxa" w:w="7020"/>
+<w:tcBorders>
+<w:top w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:left w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:bottom w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:right w:val="single" w:color="CCCCCC" w:sz="1"/>
+</w:tcBorders>
+<w:shd w:fill="2E75B6" w:val="clear"/>
+<w:tcMar>
+<w:top w:type="dxa" w:w="80"/>
+<w:left w:type="dxa" w:w="120"/>
+<w:bottom w:type="dxa" w:w="80"/>
+<w:right w:type="dxa" w:w="120"/>
+</w:tcMar>
+</w:tcPr>
+<w:p>
+<w:r>
+<w:rPr>
+<w:b/>
+<w:bCs/>
+<w:color w:val="FFFFFF"/>
+</w:rPr>
+<w:t xml:space="preserve">Deskripsi</w:t>
+</w:r>
+</w:p>
+</w:tc>
+</w:tr>
+<w:tr>
+<w:tc>
+<w:tcPr>
+<w:tcW w:type="dxa" w:w="2340"/>
+<w:tcBorders>
+<w:top w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:left w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:bottom w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:right w:val="single" w:color="CCCCCC" w:sz="1"/>
+</w:tcBorders>
+<w:tcMar>
+<w:top w:type="dxa" w:w="80"/>
+<w:left w:type="dxa" w:w="120"/>
+<w:bottom w:type="dxa" w:w="80"/>
+<w:right w:type="dxa" w:w="120"/>
+</w:tcMar>
+</w:tcPr>
+<w:p>
+<w:r>
+<w:rPr>
+<w:b/>
+<w:bCs/>
+</w:rPr>
+<w:t xml:space="preserve">API Gateway</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:type="dxa" w:w="7020"/>
+<w:tcBorders>
+<w:top w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:left w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:bottom w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:right w:val="single" w:color="CCCCCC" w:sz="1"/>
+</w:tcBorders>
+<w:tcMar>
+<w:top w:type="dxa" w:w="80"/>
+<w:left w:type="dxa" w:w="120"/>
+<w:bottom w:type="dxa" w:w="80"/>
+<w:right w:type="dxa" w:w="120"/>
+</w:tcMar>
+</w:tcPr>
+<w:p>
+<w:r>
+<w:t xml:space="preserve">Entry point untuk semua HTTP requests. Handle authentication, rate limiting, dan routing.</w:t>
+</w:r>
+</w:p>
+</w:tc>
+</w:tr>
+<w:tr>
+<w:tc>
+<w:tcPr>
+<w:tcW w:type="dxa" w:w="2340"/>
+<w:tcBorders>
+<w:top w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:left w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:bottom w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:right w:val="single" w:color="CCCCCC" w:sz="1"/>
+</w:tcBorders>
+<w:shd w:fill="F2F2F2" w:val="clear"/>
+<w:tcMar>
+<w:top w:type="dxa" w:w="80"/>
+<w:left w:type="dxa" w:w="120"/>
+<w:bottom w:type="dxa" w:w="80"/>
+<w:right w:type="dxa" w:w="120"/>
+</w:tcMar>
+</w:tcPr>
+<w:p>
+<w:r>
+<w:rPr>
+<w:b/>
+<w:bCs/>
+</w:rPr>
+<w:t xml:space="preserve">Device Service</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:type="dxa" w:w="7020"/>
+<w:tcBorders>
+<w:top w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:left w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:bottom w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:right w:val="single" w:color="CCCCCC" w:sz="1"/>
+</w:tcBorders>
+<w:shd w:fill="F2F2F2" w:val="clear"/>
+<w:tcMar>
+<w:top w:type="dxa" w:w="80"/>
+<w:left w:type="dxa" w:w="120"/>
+<w:bottom w:type="dxa" w:w="80"/>
+<w:right w:type="dxa" w:w="120"/>
+</w:tcMar>
+</w:tcPr>
+<w:p>
+<w:r>
+<w:t xml:space="preserve">Manage device inventory, credentials, grouping.</w:t>
+</w:r>
+</w:p>
+</w:tc>
+</w:tr>
+<w:tr>
+<w:tc>
+<w:tcPr>
+<w:tcW w:type="dxa" w:w="2340"/>
+<w:tcBorders>
+<w:top w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:left w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:bottom w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:right w:val="single" w:color="CCCCCC" w:sz="1"/>
+</w:tcBorders>
+<w:tcMar>
+<w:top w:type="dxa" w:w="80"/>
+<w:left w:type="dxa" w:w="120"/>
+<w:bottom w:type="dxa" w:w="80"/>
+<w:right w:type="dxa" w:w="120"/>
+</w:tcMar>
+</w:tcPr>
+<w:p>
+<w:r>
+<w:rPr>
+<w:b/>
+<w:bCs/>
+</w:rPr>
+<w:t xml:space="preserve">Collector Service</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:type="dxa" w:w="7020"/>
+<w:tcBorders>
+<w:top w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:left w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:bottom w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:right w:val="single" w:color="CCCCCC" w:sz="1"/>
+</w:tcBorders>
+<w:tcMar>
+<w:top w:type="dxa" w:w="80"/>
+<w:left w:type="dxa" w:w="120"/>
+<w:bottom w:type="dxa" w:w="80"/>
+<w:right w:type="dxa" w:w="120"/>
+</w:tcMar>
+</w:tcPr>
+<w:p>
+<w:r>
+<w:t xml:space="preserve">Orchestrate data collection dari devices. Manage polling schedules.</w:t>
+</w:r>
+</w:p>
+</w:tc>
+</w:tr>
+<w:tr>
+<w:tc>
+<w:tcPr>
+<w:tcW w:type="dxa" w:w="2340"/>
+<w:tcBorders>
+<w:top w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:left w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:bottom w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:right w:val="single" w:color="CCCCCC" w:sz="1"/>
+</w:tcBorders>
+<w:shd w:fill="F2F2F2" w:val="clear"/>
+<w:tcMar>
+<w:top w:type="dxa" w:w="80"/>
+<w:left w:type="dxa" w:w="120"/>
+<w:bottom w:type="dxa" w:w="80"/>
+<w:right w:type="dxa" w:w="120"/>
+</w:tcMar>
+</w:tcPr>
+<w:p>
+<w:r>
+<w:rPr>
+<w:b/>
+<w:bCs/>
+</w:rPr>
+<w:t xml:space="preserve">Worker Pool</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:type="dxa" w:w="7020"/>
+<w:tcBorders>
+<w:top w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:left w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:bottom w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:right w:val="single" w:color="CCCCCC" w:sz="1"/>
+</w:tcBorders>
+<w:shd w:fill="F2F2F2" w:val="clear"/>
+<w:tcMar>
+<w:top w:type="dxa" w:w="80"/>
+<w:left w:type="dxa" w:w="120"/>
+<w:bottom w:type="dxa" w:w="80"/>
+<w:right w:type="dxa" w:w="120"/>
+</w:tcMar>
+</w:tcPr>
+<w:p>
+<w:r>
+<w:t xml:space="preserve">Execute actual polling tasks. Multiple workers untuk parallel processing.</w:t>
+</w:r>
+</w:p>
+</w:tc>
+</w:tr>
+<w:tr>
+<w:tc>
+<w:tcPr>
+<w:tcW w:type="dxa" w:w="2340"/>
+<w:tcBorders>
+<w:top w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:left w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:bottom w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:right w:val="single" w:color="CCCCCC" w:sz="1"/>
+</w:tcBorders>
+<w:tcMar>
+<w:top w:type="dxa" w:w="80"/>
+<w:left w:type="dxa" w:w="120"/>
+<w:bottom w:type="dxa" w:w="80"/>
+<w:right w:type="dxa" w:w="120"/>
+</w:tcMar>
+</w:tcPr>
+<w:p>
+<w:r>
+<w:rPr>
+<w:b/>
+<w:bCs/>
+</w:rPr>
+<w:t xml:space="preserve">Config Service</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:type="dxa" w:w="7020"/>
+<w:tcBorders>
+<w:top w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:left w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:bottom w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:right w:val="single" w:color="CCCCCC" w:sz="1"/>
+</w:tcBorders>
+<w:tcMar>
+<w:top w:type="dxa" w:w="80"/>
+<w:left w:type="dxa" w:w="120"/>
+<w:bottom w:type="dxa" w:w="80"/>
+<w:right w:type="dxa" w:w="120"/>
+</w:tcMar>
+</w:tcPr>
+<w:p>
+<w:r>
+<w:t xml:space="preserve">Handle device configuration, backup, restore, versioning.</w:t>
+</w:r>
+</w:p>
+</w:tc>
+</w:tr>
+<w:tr>
+<w:tc>
+<w:tcPr>
+<w:tcW w:type="dxa" w:w="2340"/>
+<w:tcBorders>
+<w:top w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:left w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:bottom w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:right w:val="single" w:color="CCCCCC" w:sz="1"/>
+</w:tcBorders>
+<w:shd w:fill="F2F2F2" w:val="clear"/>
+<w:tcMar>
+<w:top w:type="dxa" w:w="80"/>
+<w:left w:type="dxa" w:w="120"/>
+<w:bottom w:type="dxa" w:w="80"/>
+<w:right w:type="dxa" w:w="120"/>
+</w:tcMar>
+</w:tcPr>
+<w:p>
+<w:r>
+<w:rPr>
+<w:b/>
+<w:bCs/>
+</w:rPr>
+<w:t xml:space="preserve">Alert Service</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:type="dxa" w:w="7020"/>
+<w:tcBorders>
+<w:top w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:left w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:bottom w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:right w:val="single" w:color="CCCCCC" w:sz="1"/>
+</w:tcBorders>
+<w:shd w:fill="F2F2F2" w:val="clear"/>
+<w:tcMar>
+<w:top w:type="dxa" w:w="80"/>
+<w:left w:type="dxa" w:w="120"/>
+<w:bottom w:type="dxa" w:w="80"/>
+<w:right w:type="dxa" w:w="120"/>
+</w:tcMar>
+</w:tcPr>
+<w:p>
+<w:r>
+<w:t xml:space="preserve">Evaluate alert rules dan trigger notifications.</w:t>
+</w:r>
+</w:p>
+</w:tc>
+</w:tr>
+<w:tr>
+<w:tc>
+<w:tcPr>
+<w:tcW w:type="dxa" w:w="2340"/>
+<w:tcBorders>
+<w:top w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:left w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:bottom w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:right w:val="single" w:color="CCCCCC" w:sz="1"/>
+</w:tcBorders>
+<w:tcMar>
+<w:top w:type="dxa" w:w="80"/>
+<w:left w:type="dxa" w:w="120"/>
+<w:bottom w:type="dxa" w:w="80"/>
+<w:right w:type="dxa" w:w="120"/>
+</w:tcMar>
+</w:tcPr>
+<w:p>
+<w:r>
+<w:rPr>
+<w:b/>
+<w:bCs/>
+</w:rPr>
+<w:t xml:space="preserve">Notification Service</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:type="dxa" w:w="7020"/>
+<w:tcBorders>
+<w:top w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:left w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:bottom w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:right w:val="single" w:color="CCCCCC" w:sz="1"/>
+</w:tcBorders>
+<w:tcMar>
+<w:top w:type="dxa" w:w="80"/>
+<w:left w:type="dxa" w:w="120"/>
+<w:bottom w:type="dxa" w:w="80"/>
+<w:right w:type="dxa" w:w="120"/>
+</w:tcMar>
+</w:tcPr>
+<w:p>
+<w:r>
+<w:t xml:space="preserve">Send notifications via email, telegram, webhook.</w:t>
+</w:r>
+</w:p>
+</w:tc>
+</w:tr>
+<w:tr>
+<w:tc>
+<w:tcPr>
+<w:tcW w:type="dxa" w:w="2340"/>
+<w:tcBorders>
+<w:top w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:left w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:bottom w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:right w:val="single" w:color="CCCCCC" w:sz="1"/>
+</w:tcBorders>
+<w:shd w:fill="F2F2F2" w:val="clear"/>
+<w:tcMar>
+<w:top w:type="dxa" w:w="80"/>
+<w:left w:type="dxa" w:w="120"/>
+<w:bottom w:type="dxa" w:w="80"/>
+<w:right w:type="dxa" w:w="120"/>
+</w:tcMar>
+</w:tcPr>
+<w:p>
+<w:r>
+<w:rPr>
+<w:b/>
+<w:bCs/>
+</w:rPr>
+<w:t xml:space="preserve">Analytics Service</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:type="dxa" w:w="7020"/>
+<w:tcBorders>
+<w:top w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:left w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:bottom w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:right w:val="single" w:color="CCCCCC" w:sz="1"/>
+</w:tcBorders>
+<w:shd w:fill="F2F2F2" w:val="clear"/>
+<w:tcMar>
+<w:top w:type="dxa" w:w="80"/>
+<w:left w:type="dxa" w:w="120"/>
+<w:bottom w:type="dxa" w:w="80"/>
+<w:right w:type="dxa" w:w="120"/>
+</w:tcMar>
+</w:tcPr>
+<w:p>
+<w:r>
+<w:t xml:space="preserve">Process data untuk reporting dan analytics.</w:t>
+</w:r>
+</w:p>
+</w:tc>
+</w:tr>
+<w:tr>
+<w:tc>
+<w:tcPr>
+<w:tcW w:type="dxa" w:w="2340"/>
+<w:tcBorders>
+<w:top w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:left w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:bottom w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:right w:val="single" w:color="CCCCCC" w:sz="1"/>
+</w:tcBorders>
+<w:tcMar>
+<w:top w:type="dxa" w:w="80"/>
+<w:left w:type="dxa" w:w="120"/>
+<w:bottom w:type="dxa" w:w="80"/>
+<w:right w:type="dxa" w:w="120"/>
+</w:tcMar>
+</w:tcPr>
+<w:p>
+<w:r>
+<w:rPr>
+<w:b/>
+<w:bCs/>
+</w:rPr>
+<w:t xml:space="preserve">Web UI</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:type="dxa" w:w="7020"/>
+<w:tcBorders>
+<w:top w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:left w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:bottom w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:right w:val="single" w:color="CCCCCC" w:sz="1"/>
+</w:tcBorders>
+<w:tcMar>
+<w:top w:type="dxa" w:w="80"/>
+<w:left w:type="dxa" w:w="120"/>
+<w:bottom w:type="dxa" w:w="80"/>
+<w:right w:type="dxa" w:w="120"/>
+</w:tcMar>
+</w:tcPr>
+<w:p>
+<w:r>
+<w:t xml:space="preserve">Frontend dashboard dan user interface.</w:t>
+</w:r>
+</w:p>
+</w:tc>
+</w:tr>
+</w:tbl>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="Heading2"/>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">5.2 Communication Pattern</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">Synchronous: REST API untuk user-facing operations</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">Asynchronous: Message Queue (NATS/RabbitMQ) untuk background jobs</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">Event-driven: Pub/Sub pattern untuk real-time updates</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="Heading2"/>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">5.3 Data Flow</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:r>
+<w:rPr>
+<w:b/>
+<w:bCs/>
+</w:rPr>
+<w:t xml:space="preserve">Polling Flow:</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="3"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">Collector Service membaca schedule dari database</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="3"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">Mengirim polling task ke Message Queue</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="3"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">Worker mengambil task dan connect ke device</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="3"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">Worker menyimpan hasil ke Time-Series Database</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="3"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">Alert Service evaluate rules dan trigger notifications jika perlu</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:r>
+<w:br w:type="page"/>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="Heading1"/>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">6. Spesifikasi Teknologi</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="Heading2"/>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">6.1 Backend Technology Stack</w:t>
+</w:r>
+</w:p>
+<w:tbl>
+<w:tblPr>
+<w:tblW w:type="dxa" w:w="9360"/>
+<w:tblBorders>
+<w:top w:val="single" w:color="auto" w:sz="4"/>
+<w:left w:val="single" w:color="auto" w:sz="4"/>
+<w:bottom w:val="single" w:color="auto" w:sz="4"/>
+<w:right w:val="single" w:color="auto" w:sz="4"/>
+<w:insideH w:val="single" w:color="auto" w:sz="4"/>
+<w:insideV w:val="single" w:color="auto" w:sz="4"/>
+</w:tblBorders>
+</w:tblPr>
+<w:tblGrid>
+<w:gridCol w:w="2340"/>
+<w:gridCol w:w="7020"/>
+</w:tblGrid>
+<w:tr>
+<w:tc>
+<w:tcPr>
+<w:tcW w:type="dxa" w:w="2340"/>
+<w:tcBorders>
+<w:top w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:left w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:bottom w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:right w:val="single" w:color="CCCCCC" w:sz="1"/>
+</w:tcBorders>
+<w:shd w:fill="2E75B6" w:val="clear"/>
+<w:tcMar>
+<w:top w:type="dxa" w:w="80"/>
+<w:left w:type="dxa" w:w="120"/>
+<w:bottom w:type="dxa" w:w="80"/>
+<w:right w:type="dxa" w:w="120"/>
+</w:tcMar>
+</w:tcPr>
+<w:p>
+<w:r>
+<w:rPr>
+<w:b/>
+<w:bCs/>
+<w:color w:val="FFFFFF"/>
+</w:rPr>
+<w:t xml:space="preserve">Komponen</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:type="dxa" w:w="7020"/>
+<w:tcBorders>
+<w:top w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:left w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:bottom w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:right w:val="single" w:color="CCCCCC" w:sz="1"/>
+</w:tcBorders>
+<w:shd w:fill="2E75B6" w:val="clear"/>
+<w:tcMar>
+<w:top w:type="dxa" w:w="80"/>
+<w:left w:type="dxa" w:w="120"/>
+<w:bottom w:type="dxa" w:w="80"/>
+<w:right w:type="dxa" w:w="120"/>
+</w:tcMar>
+</w:tcPr>
+<w:p>
+<w:r>
+<w:rPr>
+<w:b/>
+<w:bCs/>
+<w:color w:val="FFFFFF"/>
+</w:rPr>
+<w:t xml:space="preserve">Teknologi</w:t>
+</w:r>
+</w:p>
+</w:tc>
+</w:tr>
+<w:tr>
+<w:tc>
+<w:tcPr>
+<w:tcW w:type="dxa" w:w="2340"/>
+<w:tcBorders>
+<w:top w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:left w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:bottom w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:right w:val="single" w:color="CCCCCC" w:sz="1"/>
+</w:tcBorders>
+<w:tcMar>
+<w:top w:type="dxa" w:w="80"/>
+<w:left w:type="dxa" w:w="120"/>
+<w:bottom w:type="dxa" w:w="80"/>
+<w:right w:type="dxa" w:w="120"/>
+</w:tcMar>
+</w:tcPr>
+<w:p>
+<w:r>
+<w:rPr>
+<w:b/>
+<w:bCs/>
+</w:rPr>
+<w:t xml:space="preserve">Language</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:type="dxa" w:w="7020"/>
+<w:tcBorders>
+<w:top w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:left w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:bottom w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:right w:val="single" w:color="CCCCCC" w:sz="1"/>
+</w:tcBorders>
+<w:tcMar>
+<w:top w:type="dxa" w:w="80"/>
+<w:left w:type="dxa" w:w="120"/>
+<w:bottom w:type="dxa" w:w="80"/>
+<w:right w:type="dxa" w:w="120"/>
+</w:tcMar>
+</w:tcPr>
+<w:p>
+<w:r>
+<w:t xml:space="preserve">Go 1.21+</w:t>
+</w:r>
+</w:p>
+</w:tc>
+</w:tr>
+<w:tr>
+<w:tc>
+<w:tcPr>
+<w:tcW w:type="dxa" w:w="2340"/>
+<w:tcBorders>
+<w:top w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:left w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:bottom w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:right w:val="single" w:color="CCCCCC" w:sz="1"/>
+</w:tcBorders>
+<w:shd w:fill="F2F2F2" w:val="clear"/>
+<w:tcMar>
+<w:top w:type="dxa" w:w="80"/>
+<w:left w:type="dxa" w:w="120"/>
+<w:bottom w:type="dxa" w:w="80"/>
+<w:right w:type="dxa" w:w="120"/>
+</w:tcMar>
+</w:tcPr>
+<w:p>
+<w:r>
+<w:rPr>
+<w:b/>
+<w:bCs/>
+</w:rPr>
+<w:t xml:space="preserve">Web Framework</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:type="dxa" w:w="7020"/>
+<w:tcBorders>
+<w:top w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:left w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:bottom w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:right w:val="single" w:color="CCCCCC" w:sz="1"/>
+</w:tcBorders>
+<w:shd w:fill="F2F2F2" w:val="clear"/>
+<w:tcMar>
+<w:top w:type="dxa" w:w="80"/>
+<w:left w:type="dxa" w:w="120"/>
+<w:bottom w:type="dxa" w:w="80"/>
+<w:right w:type="dxa" w:w="120"/>
+</w:tcMar>
+</w:tcPr>
+<w:p>
+<w:r>
+<w:t xml:space="preserve">Gin / Echo / Fiber (pilih salah satu)</w:t>
+</w:r>
+</w:p>
+</w:tc>
+</w:tr>
+<w:tr>
+<w:tc>
+<w:tcPr>
+<w:tcW w:type="dxa" w:w="2340"/>
+<w:tcBorders>
+<w:top w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:left w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:bottom w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:right w:val="single" w:color="CCCCCC" w:sz="1"/>
+</w:tcBorders>
+<w:tcMar>
+<w:top w:type="dxa" w:w="80"/>
+<w:left w:type="dxa" w:w="120"/>
+<w:bottom w:type="dxa" w:w="80"/>
+<w:right w:type="dxa" w:w="120"/>
+</w:tcMar>
+</w:tcPr>
+<w:p>
+<w:r>
+<w:rPr>
+<w:b/>
+<w:bCs/>
+</w:rPr>
+<w:t xml:space="preserve">Message Queue</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:type="dxa" w:w="7020"/>
+<w:tcBorders>
+<w:top w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:left w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:bottom w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:right w:val="single" w:color="CCCCCC" w:sz="1"/>
+</w:tcBorders>
+<w:tcMar>
+<w:top w:type="dxa" w:w="80"/>
+<w:left w:type="dxa" w:w="120"/>
+<w:bottom w:type="dxa" w:w="80"/>
+<w:right w:type="dxa" w:w="120"/>
+</w:tcMar>
+</w:tcPr>
+<w:p>
+<w:r>
+<w:t xml:space="preserve">NATS / RabbitMQ</w:t>
+</w:r>
+</w:p>
+</w:tc>
+</w:tr>
+<w:tr>
+<w:tc>
+<w:tcPr>
+<w:tcW w:type="dxa" w:w="2340"/>
+<w:tcBorders>
+<w:top w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:left w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:bottom w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:right w:val="single" w:color="CCCCCC" w:sz="1"/>
+</w:tcBorders>
+<w:shd w:fill="F2F2F2" w:val="clear"/>
+<w:tcMar>
+<w:top w:type="dxa" w:w="80"/>
+<w:left w:type="dxa" w:w="120"/>
+<w:bottom w:type="dxa" w:w="80"/>
+<w:right w:type="dxa" w:w="120"/>
+</w:tcMar>
+</w:tcPr>
+<w:p>
+<w:r>
+<w:rPr>
+<w:b/>
+<w:bCs/>
+</w:rPr>
+<w:t xml:space="preserve">Time-Series DB</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:type="dxa" w:w="7020"/>
+<w:tcBorders>
+<w:top w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:left w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:bottom w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:right w:val="single" w:color="CCCCCC" w:sz="1"/>
+</w:tcBorders>
+<w:shd w:fill="F2F2F2" w:val="clear"/>
+<w:tcMar>
+<w:top w:type="dxa" w:w="80"/>
+<w:left w:type="dxa" w:w="120"/>
+<w:bottom w:type="dxa" w:w="80"/>
+<w:right w:type="dxa" w:w="120"/>
+</w:tcMar>
+</w:tcPr>
+<w:p>
+<w:r>
+<w:t xml:space="preserve">InfluxDB 2.x / TimescaleDB</w:t>
+</w:r>
+</w:p>
+</w:tc>
+</w:tr>
+<w:tr>
+<w:tc>
+<w:tcPr>
+<w:tcW w:type="dxa" w:w="2340"/>
+<w:tcBorders>
+<w:top w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:left w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:bottom w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:right w:val="single" w:color="CCCCCC" w:sz="1"/>
+</w:tcBorders>
+<w:tcMar>
+<w:top w:type="dxa" w:w="80"/>
+<w:left w:type="dxa" w:w="120"/>
+<w:bottom w:type="dxa" w:w="80"/>
+<w:right w:type="dxa" w:w="120"/>
+</w:tcMar>
+</w:tcPr>
+<w:p>
+<w:r>
+<w:rPr>
+<w:b/>
+<w:bCs/>
+</w:rPr>
+<w:t xml:space="preserve">Relational DB</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:type="dxa" w:w="7020"/>
+<w:tcBorders>
+<w:top w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:left w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:bottom w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:right w:val="single" w:color="CCCCCC" w:sz="1"/>
+</w:tcBorders>
+<w:tcMar>
+<w:top w:type="dxa" w:w="80"/>
+<w:left w:type="dxa" w:w="120"/>
+<w:bottom w:type="dxa" w:w="80"/>
+<w:right w:type="dxa" w:w="120"/>
+</w:tcMar>
+</w:tcPr>
+<w:p>
+<w:r>
+<w:t xml:space="preserve">PostgreSQL 14+</w:t>
+</w:r>
+</w:p>
+</w:tc>
+</w:tr>
+<w:tr>
+<w:tc>
+<w:tcPr>
+<w:tcW w:type="dxa" w:w="2340"/>
+<w:tcBorders>
+<w:top w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:left w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:bottom w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:right w:val="single" w:color="CCCCCC" w:sz="1"/>
+</w:tcBorders>
+<w:shd w:fill="F2F2F2" w:val="clear"/>
+<w:tcMar>
+<w:top w:type="dxa" w:w="80"/>
+<w:left w:type="dxa" w:w="120"/>
+<w:bottom w:type="dxa" w:w="80"/>
+<w:right w:type="dxa" w:w="120"/>
+</w:tcMar>
+</w:tcPr>
+<w:p>
+<w:r>
+<w:rPr>
+<w:b/>
+<w:bCs/>
+</w:rPr>
+<w:t xml:space="preserve">Cache</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:type="dxa" w:w="7020"/>
+<w:tcBorders>
+<w:top w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:left w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:bottom w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:right w:val="single" w:color="CCCCCC" w:sz="1"/>
+</w:tcBorders>
+<w:shd w:fill="F2F2F2" w:val="clear"/>
+<w:tcMar>
+<w:top w:type="dxa" w:w="80"/>
+<w:left w:type="dxa" w:w="120"/>
+<w:bottom w:type="dxa" w:w="80"/>
+<w:right w:type="dxa" w:w="120"/>
+</w:tcMar>
+</w:tcPr>
+<w:p>
+<w:r>
+<w:t xml:space="preserve">Redis 7+</w:t>
+</w:r>
+</w:p>
+</w:tc>
+</w:tr>
+<w:tr>
+<w:tc>
+<w:tcPr>
+<w:tcW w:type="dxa" w:w="2340"/>
+<w:tcBorders>
+<w:top w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:left w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:bottom w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:right w:val="single" w:color="CCCCCC" w:sz="1"/>
+</w:tcBorders>
+<w:tcMar>
+<w:top w:type="dxa" w:w="80"/>
+<w:left w:type="dxa" w:w="120"/>
+<w:bottom w:type="dxa" w:w="80"/>
+<w:right w:type="dxa" w:w="120"/>
+</w:tcMar>
+</w:tcPr>
+<w:p>
+<w:r>
+<w:rPr>
+<w:b/>
+<w:bCs/>
+</w:rPr>
+<w:t xml:space="preserve">Container</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:type="dxa" w:w="7020"/>
+<w:tcBorders>
+<w:top w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:left w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:bottom w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:right w:val="single" w:color="CCCCCC" w:sz="1"/>
+</w:tcBorders>
+<w:tcMar>
+<w:top w:type="dxa" w:w="80"/>
+<w:left w:type="dxa" w:w="120"/>
+<w:bottom w:type="dxa" w:w="80"/>
+<w:right w:type="dxa" w:w="120"/>
+</w:tcMar>
+</w:tcPr>
+<w:p>
+<w:r>
+<w:t xml:space="preserve">Docker + Docker Compose</w:t>
+</w:r>
+</w:p>
+</w:tc>
+</w:tr>
+<w:tr>
+<w:tc>
+<w:tcPr>
+<w:tcW w:type="dxa" w:w="2340"/>
+<w:tcBorders>
+<w:top w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:left w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:bottom w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:right w:val="single" w:color="CCCCCC" w:sz="1"/>
+</w:tcBorders>
+<w:shd w:fill="F2F2F2" w:val="clear"/>
+<w:tcMar>
+<w:top w:type="dxa" w:w="80"/>
+<w:left w:type="dxa" w:w="120"/>
+<w:bottom w:type="dxa" w:w="80"/>
+<w:right w:type="dxa" w:w="120"/>
+</w:tcMar>
+</w:tcPr>
+<w:p>
+<w:r>
+<w:rPr>
+<w:b/>
+<w:bCs/>
+</w:rPr>
+<w:t xml:space="preserve">Orchestration</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:type="dxa" w:w="7020"/>
+<w:tcBorders>
+<w:top w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:left w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:bottom w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:right w:val="single" w:color="CCCCCC" w:sz="1"/>
+</w:tcBorders>
+<w:shd w:fill="F2F2F2" w:val="clear"/>
+<w:tcMar>
+<w:top w:type="dxa" w:w="80"/>
+<w:left w:type="dxa" w:w="120"/>
+<w:bottom w:type="dxa" w:w="80"/>
+<w:right w:type="dxa" w:w="120"/>
+</w:tcMar>
+</w:tcPr>
+<w:p>
+<w:r>
+<w:t xml:space="preserve">Kubernetes (optional untuk production)</w:t>
+</w:r>
+</w:p>
+</w:tc>
+</w:tr>
+</w:tbl>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="Heading2"/>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">6.2 Key Go Libraries</w:t>
+</w:r>
+</w:p>
+<w:tbl>
+<w:tblPr>
+<w:tblW w:type="dxa" w:w="9360"/>
+<w:tblBorders>
+<w:top w:val="single" w:color="auto" w:sz="4"/>
+<w:left w:val="single" w:color="auto" w:sz="4"/>
+<w:bottom w:val="single" w:color="auto" w:sz="4"/>
+<w:right w:val="single" w:color="auto" w:sz="4"/>
+<w:insideH w:val="single" w:color="auto" w:sz="4"/>
+<w:insideV w:val="single" w:color="auto" w:sz="4"/>
+</w:tblBorders>
+</w:tblPr>
+<w:tblGrid>
+<w:gridCol w:w="2800"/>
+<w:gridCol w:w="6560"/>
+</w:tblGrid>
+<w:tr>
+<w:tc>
+<w:tcPr>
+<w:tcW w:type="dxa" w:w="2800"/>
+<w:tcBorders>
+<w:top w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:left w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:bottom w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:right w:val="single" w:color="CCCCCC" w:sz="1"/>
+</w:tcBorders>
+<w:shd w:fill="2E75B6" w:val="clear"/>
+<w:tcMar>
+<w:top w:type="dxa" w:w="80"/>
+<w:left w:type="dxa" w:w="120"/>
+<w:bottom w:type="dxa" w:w="80"/>
+<w:right w:type="dxa" w:w="120"/>
+</w:tcMar>
+</w:tcPr>
+<w:p>
+<w:r>
+<w:rPr>
+<w:b/>
+<w:bCs/>
+<w:color w:val="FFFFFF"/>
+</w:rPr>
+<w:t xml:space="preserve">Library</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:type="dxa" w:w="6560"/>
+<w:tcBorders>
+<w:top w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:left w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:bottom w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:right w:val="single" w:color="CCCCCC" w:sz="1"/>
+</w:tcBorders>
+<w:shd w:fill="2E75B6" w:val="clear"/>
+<w:tcMar>
+<w:top w:type="dxa" w:w="80"/>
+<w:left w:type="dxa" w:w="120"/>
+<w:bottom w:type="dxa" w:w="80"/>
+<w:right w:type="dxa" w:w="120"/>
+</w:tcMar>
+</w:tcPr>
+<w:p>
+<w:r>
+<w:rPr>
+<w:b/>
+<w:bCs/>
+<w:color w:val="FFFFFF"/>
+</w:rPr>
+<w:t xml:space="preserve">Purpose</w:t>
+</w:r>
+</w:p>
+</w:tc>
+</w:tr>
+<w:tr>
+<w:tc>
+<w:tcPr>
+<w:tcW w:type="dxa" w:w="2800"/>
+<w:tcBorders>
+<w:top w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:left w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:bottom w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:right w:val="single" w:color="CCCCCC" w:sz="1"/>
+</w:tcBorders>
+<w:tcMar>
+<w:top w:type="dxa" w:w="80"/>
+<w:left w:type="dxa" w:w="120"/>
+<w:bottom w:type="dxa" w:w="80"/>
+<w:right w:type="dxa" w:w="120"/>
+</w:tcMar>
+</w:tcPr>
+<w:p>
+<w:r>
+<w:t xml:space="preserve">github.com/gin-gonic/gin</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:type="dxa" w:w="6560"/>
+<w:tcBorders>
+<w:top w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:left w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:bottom w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:right w:val="single" w:color="CCCCCC" w:sz="1"/>
+</w:tcBorders>
+<w:tcMar>
+<w:top w:type="dxa" w:w="80"/>
+<w:left w:type="dxa" w:w="120"/>
+<w:bottom w:type="dxa" w:w="80"/>
+<w:right w:type="dxa" w:w="120"/>
+</w:tcMar>
+</w:tcPr>
+<w:p>
+<w:r>
+<w:t xml:space="preserve">HTTP web framework</w:t>
+</w:r>
+</w:p>
+</w:tc>
+</w:tr>
+<w:tr>
+<w:tc>
+<w:tcPr>
+<w:tcW w:type="dxa" w:w="2800"/>
+<w:tcBorders>
+<w:top w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:left w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:bottom w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:right w:val="single" w:color="CCCCCC" w:sz="1"/>
+</w:tcBorders>
+<w:shd w:fill="F2F2F2" w:val="clear"/>
+<w:tcMar>
+<w:top w:type="dxa" w:w="80"/>
+<w:left w:type="dxa" w:w="120"/>
+<w:bottom w:type="dxa" w:w="80"/>
+<w:right w:type="dxa" w:w="120"/>
+</w:tcMar>
+</w:tcPr>
+<w:p>
+<w:r>
+<w:t xml:space="preserve">gorm.io/gorm</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:type="dxa" w:w="6560"/>
+<w:tcBorders>
+<w:top w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:left w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:bottom w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:right w:val="single" w:color="CCCCCC" w:sz="1"/>
+</w:tcBorders>
+<w:shd w:fill="F2F2F2" w:val="clear"/>
+<w:tcMar>
+<w:top w:type="dxa" w:w="80"/>
+<w:left w:type="dxa" w:w="120"/>
+<w:bottom w:type="dxa" w:w="80"/>
+<w:right w:type="dxa" w:w="120"/>
+</w:tcMar>
+</w:tcPr>
+<w:p>
+<w:r>
+<w:t xml:space="preserve">ORM untuk PostgreSQL</w:t>
+</w:r>
+</w:p>
+</w:tc>
+</w:tr>
+<w:tr>
+<w:tc>
+<w:tcPr>
+<w:tcW w:type="dxa" w:w="2800"/>
+<w:tcBorders>
+<w:top w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:left w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:bottom w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:right w:val="single" w:color="CCCCCC" w:sz="1"/>
+</w:tcBorders>
+<w:tcMar>
+<w:top w:type="dxa" w:w="80"/>
+<w:left w:type="dxa" w:w="120"/>
+<w:bottom w:type="dxa" w:w="80"/>
+<w:right w:type="dxa" w:w="120"/>
+</w:tcMar>
+</w:tcPr>
+<w:p>
+<w:r>
+<w:t xml:space="preserve">github.com/go-redis/redis</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:type="dxa" w:w="6560"/>
+<w:tcBorders>
+<w:top w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:left w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:bottom w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:right w:val="single" w:color="CCCCCC" w:sz="1"/>
+</w:tcBorders>
+<w:tcMar>
+<w:top w:type="dxa" w:w="80"/>
+<w:left w:type="dxa" w:w="120"/>
+<w:bottom w:type="dxa" w:w="80"/>
+<w:right w:type="dxa" w:w="120"/>
+</w:tcMar>
+</w:tcPr>
+<w:p>
+<w:r>
+<w:t xml:space="preserve">Redis client</w:t>
+</w:r>
+</w:p>
+</w:tc>
+</w:tr>
+<w:tr>
+<w:tc>
+<w:tcPr>
+<w:tcW w:type="dxa" w:w="2800"/>
+<w:tcBorders>
+<w:top w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:left w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:bottom w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:right w:val="single" w:color="CCCCCC" w:sz="1"/>
+</w:tcBorders>
+<w:shd w:fill="F2F2F2" w:val="clear"/>
+<w:tcMar>
+<w:top w:type="dxa" w:w="80"/>
+<w:left w:type="dxa" w:w="120"/>
+<w:bottom w:type="dxa" w:w="80"/>
+<w:right w:type="dxa" w:w="120"/>
+</w:tcMar>
+</w:tcPr>
+<w:p>
+<w:r>
+<w:t xml:space="preserve">github.com/nats-io/nats.go</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:type="dxa" w:w="6560"/>
+<w:tcBorders>
+<w:top w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:left w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:bottom w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:right w:val="single" w:color="CCCCCC" w:sz="1"/>
+</w:tcBorders>
+<w:shd w:fill="F2F2F2" w:val="clear"/>
+<w:tcMar>
+<w:top w:type="dxa" w:w="80"/>
+<w:left w:type="dxa" w:w="120"/>
+<w:bottom w:type="dxa" w:w="80"/>
+<w:right w:type="dxa" w:w="120"/>
+</w:tcMar>
+</w:tcPr>
+<w:p>
+<w:r>
+<w:t xml:space="preserve">NATS messaging client</w:t>
+</w:r>
+</w:p>
+</w:tc>
+</w:tr>
+<w:tr>
+<w:tc>
+<w:tcPr>
+<w:tcW w:type="dxa" w:w="2800"/>
+<w:tcBorders>
+<w:top w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:left w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:bottom w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:right w:val="single" w:color="CCCCCC" w:sz="1"/>
+</w:tcBorders>
+<w:tcMar>
+<w:top w:type="dxa" w:w="80"/>
+<w:left w:type="dxa" w:w="120"/>
+<w:bottom w:type="dxa" w:w="80"/>
+<w:right w:type="dxa" w:w="120"/>
+</w:tcMar>
+</w:tcPr>
+<w:p>
+<w:r>
+<w:t xml:space="preserve">golang.org/x/crypto/ssh</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:type="dxa" w:w="6560"/>
+<w:tcBorders>
+<w:top w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:left w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:bottom w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:right w:val="single" w:color="CCCCCC" w:sz="1"/>
+</w:tcBorders>
+<w:tcMar>
+<w:top w:type="dxa" w:w="80"/>
+<w:left w:type="dxa" w:w="120"/>
+<w:bottom w:type="dxa" w:w="80"/>
+<w:right w:type="dxa" w:w="120"/>
+</w:tcMar>
+</w:tcPr>
+<w:p>
+<w:r>
+<w:t xml:space="preserve">SSH client</w:t>
+</w:r>
+</w:p>
+</w:tc>
+</w:tr>
+<w:tr>
+<w:tc>
+<w:tcPr>
+<w:tcW w:type="dxa" w:w="2800"/>
+<w:tcBorders>
+<w:top w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:left w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:bottom w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:right w:val="single" w:color="CCCCCC" w:sz="1"/>
+</w:tcBorders>
+<w:shd w:fill="F2F2F2" w:val="clear"/>
+<w:tcMar>
+<w:top w:type="dxa" w:w="80"/>
+<w:left w:type="dxa" w:w="120"/>
+<w:bottom w:type="dxa" w:w="80"/>
+<w:right w:type="dxa" w:w="120"/>
+</w:tcMar>
+</w:tcPr>
+<w:p>
+<w:r>
+<w:t xml:space="preserve">github.com/ziutek/telnet</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:type="dxa" w:w="6560"/>
+<w:tcBorders>
+<w:top w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:left w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:bottom w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:right w:val="single" w:color="CCCCCC" w:sz="1"/>
+</w:tcBorders>
+<w:shd w:fill="F2F2F2" w:val="clear"/>
+<w:tcMar>
+<w:top w:type="dxa" w:w="80"/>
+<w:left w:type="dxa" w:w="120"/>
+<w:bottom w:type="dxa" w:w="80"/>
+<w:right w:type="dxa" w:w="120"/>
+</w:tcMar>
+</w:tcPr>
+<w:p>
+<w:r>
+<w:t xml:space="preserve">Telnet client</w:t>
+</w:r>
+</w:p>
+</w:tc>
+</w:tr>
+<w:tr>
+<w:tc>
+<w:tcPr>
+<w:tcW w:type="dxa" w:w="2800"/>
+<w:tcBorders>
+<w:top w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:left w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:bottom w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:right w:val="single" w:color="CCCCCC" w:sz="1"/>
+</w:tcBorders>
+<w:tcMar>
+<w:top w:type="dxa" w:w="80"/>
+<w:left w:type="dxa" w:w="120"/>
+<w:bottom w:type="dxa" w:w="80"/>
+<w:right w:type="dxa" w:w="120"/>
+</w:tcMar>
+</w:tcPr>
+<w:p>
+<w:r>
+<w:t xml:space="preserve">github.com/go-routeros/routeros</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:type="dxa" w:w="6560"/>
+<w:tcBorders>
+<w:top w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:left w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:bottom w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:right w:val="single" w:color="CCCCCC" w:sz="1"/>
+</w:tcBorders>
+<w:tcMar>
+<w:top w:type="dxa" w:w="80"/>
+<w:left w:type="dxa" w:w="120"/>
+<w:bottom w:type="dxa" w:w="80"/>
+<w:right w:type="dxa" w:w="120"/>
+</w:tcMar>
+</w:tcPr>
+<w:p>
+<w:r>
+<w:t xml:space="preserve">Mikrotik RouterOS API client</w:t>
+</w:r>
+</w:p>
+</w:tc>
+</w:tr>
+<w:tr>
+<w:tc>
+<w:tcPr>
+<w:tcW w:type="dxa" w:w="2800"/>
+<w:tcBorders>
+<w:top w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:left w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:bottom w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:right w:val="single" w:color="CCCCCC" w:sz="1"/>
+</w:tcBorders>
+<w:shd w:fill="F2F2F2" w:val="clear"/>
+<w:tcMar>
+<w:top w:type="dxa" w:w="80"/>
+<w:left w:type="dxa" w:w="120"/>
+<w:bottom w:type="dxa" w:w="80"/>
+<w:right w:type="dxa" w:w="120"/>
+</w:tcMar>
+</w:tcPr>
+<w:p>
+<w:r>
+<w:t xml:space="preserve">github.com/gosnmp/gosnmp</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:type="dxa" w:w="6560"/>
+<w:tcBorders>
+<w:top w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:left w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:bottom w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:right w:val="single" w:color="CCCCCC" w:sz="1"/>
+</w:tcBorders>
+<w:shd w:fill="F2F2F2" w:val="clear"/>
+<w:tcMar>
+<w:top w:type="dxa" w:w="80"/>
+<w:left w:type="dxa" w:w="120"/>
+<w:bottom w:type="dxa" w:w="80"/>
+<w:right w:type="dxa" w:w="120"/>
+</w:tcMar>
+</w:tcPr>
+<w:p>
+<w:r>
+<w:t xml:space="preserve">SNMP library</w:t>
+</w:r>
+</w:p>
+</w:tc>
+</w:tr>
+<w:tr>
+<w:tc>
+<w:tcPr>
+<w:tcW w:type="dxa" w:w="2800"/>
+<w:tcBorders>
+<w:top w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:left w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:bottom w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:right w:val="single" w:color="CCCCCC" w:sz="1"/>
+</w:tcBorders>
+<w:tcMar>
+<w:top w:type="dxa" w:w="80"/>
+<w:left w:type="dxa" w:w="120"/>
+<w:bottom w:type="dxa" w:w="80"/>
+<w:right w:type="dxa" w:w="120"/>
+</w:tcMar>
+</w:tcPr>
+<w:p>
+<w:r>
+<w:t xml:space="preserve">github.com/influxdata/influxdb-client-go</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:type="dxa" w:w="6560"/>
+<w:tcBorders>
+<w:top w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:left w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:bottom w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:right w:val="single" w:color="CCCCCC" w:sz="1"/>
+</w:tcBorders>
+<w:tcMar>
+<w:top w:type="dxa" w:w="80"/>
+<w:left w:type="dxa" w:w="120"/>
+<w:bottom w:type="dxa" w:w="80"/>
+<w:right w:type="dxa" w:w="120"/>
+</w:tcMar>
+</w:tcPr>
+<w:p>
+<w:r>
+<w:t xml:space="preserve">InfluxDB client</w:t>
+</w:r>
+</w:p>
+</w:tc>
+</w:tr>
+<w:tr>
+<w:tc>
+<w:tcPr>
+<w:tcW w:type="dxa" w:w="2800"/>
+<w:tcBorders>
+<w:top w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:left w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:bottom w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:right w:val="single" w:color="CCCCCC" w:sz="1"/>
+</w:tcBorders>
+<w:shd w:fill="F2F2F2" w:val="clear"/>
+<w:tcMar>
+<w:top w:type="dxa" w:w="80"/>
+<w:left w:type="dxa" w:w="120"/>
+<w:bottom w:type="dxa" w:w="80"/>
+<w:right w:type="dxa" w:w="120"/>
+</w:tcMar>
+</w:tcPr>
+<w:p>
+<w:r>
+<w:t xml:space="preserve">github.com/golang-jwt/jwt</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:type="dxa" w:w="6560"/>
+<w:tcBorders>
+<w:top w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:left w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:bottom w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:right w:val="single" w:color="CCCCCC" w:sz="1"/>
+</w:tcBorders>
+<w:shd w:fill="F2F2F2" w:val="clear"/>
+<w:tcMar>
+<w:top w:type="dxa" w:w="80"/>
+<w:left w:type="dxa" w:w="120"/>
+<w:bottom w:type="dxa" w:w="80"/>
+<w:right w:type="dxa" w:w="120"/>
+</w:tcMar>
+</w:tcPr>
+<w:p>
+<w:r>
+<w:t xml:space="preserve">JWT authentication</w:t>
+</w:r>
+</w:p>
+</w:tc>
+</w:tr>
+<w:tr>
+<w:tc>
+<w:tcPr>
+<w:tcW w:type="dxa" w:w="2800"/>
+<w:tcBorders>
+<w:top w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:left w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:bottom w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:right w:val="single" w:color="CCCCCC" w:sz="1"/>
+</w:tcBorders>
+<w:tcMar>
+<w:top w:type="dxa" w:w="80"/>
+<w:left w:type="dxa" w:w="120"/>
+<w:bottom w:type="dxa" w:w="80"/>
+<w:right w:type="dxa" w:w="120"/>
+</w:tcMar>
+</w:tcPr>
+<w:p>
+<w:r>
+<w:t xml:space="preserve">go.uber.org/zap</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:type="dxa" w:w="6560"/>
+<w:tcBorders>
+<w:top w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:left w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:bottom w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:right w:val="single" w:color="CCCCCC" w:sz="1"/>
+</w:tcBorders>
+<w:tcMar>
+<w:top w:type="dxa" w:w="80"/>
+<w:left w:type="dxa" w:w="120"/>
+<w:bottom w:type="dxa" w:w="80"/>
+<w:right w:type="dxa" w:w="120"/>
+</w:tcMar>
+</w:tcPr>
+<w:p>
+<w:r>
+<w:t xml:space="preserve">Structured logging</w:t>
+</w:r>
+</w:p>
+</w:tc>
+</w:tr>
+<w:tr>
+<w:tc>
+<w:tcPr>
+<w:tcW w:type="dxa" w:w="2800"/>
+<w:tcBorders>
+<w:top w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:left w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:bottom w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:right w:val="single" w:color="CCCCCC" w:sz="1"/>
+</w:tcBorders>
+<w:shd w:fill="F2F2F2" w:val="clear"/>
+<w:tcMar>
+<w:top w:type="dxa" w:w="80"/>
+<w:left w:type="dxa" w:w="120"/>
+<w:bottom w:type="dxa" w:w="80"/>
+<w:right w:type="dxa" w:w="120"/>
+</w:tcMar>
+</w:tcPr>
+<w:p>
+<w:r>
+<w:t xml:space="preserve">github.com/prometheus/client_golang</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:type="dxa" w:w="6560"/>
+<w:tcBorders>
+<w:top w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:left w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:bottom w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:right w:val="single" w:color="CCCCCC" w:sz="1"/>
+</w:tcBorders>
+<w:shd w:fill="F2F2F2" w:val="clear"/>
+<w:tcMar>
+<w:top w:type="dxa" w:w="80"/>
+<w:left w:type="dxa" w:w="120"/>
+<w:bottom w:type="dxa" w:w="80"/>
+<w:right w:type="dxa" w:w="120"/>
+</w:tcMar>
+</w:tcPr>
+<w:p>
+<w:r>
+<w:t xml:space="preserve">Prometheus metrics</w:t>
+</w:r>
+</w:p>
+</w:tc>
+</w:tr>
+<w:tr>
+<w:tc>
+<w:tcPr>
+<w:tcW w:type="dxa" w:w="2800"/>
+<w:tcBorders>
+<w:top w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:left w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:bottom w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:right w:val="single" w:color="CCCCCC" w:sz="1"/>
+</w:tcBorders>
+<w:tcMar>
+<w:top w:type="dxa" w:w="80"/>
+<w:left w:type="dxa" w:w="120"/>
+<w:bottom w:type="dxa" w:w="80"/>
+<w:right w:type="dxa" w:w="120"/>
+</w:tcMar>
+</w:tcPr>
+<w:p>
+<w:r>
+<w:t xml:space="preserve">github.com/spf13/viper</w:t>
+</w:r>
+</w:p>
+</w:tc>
+<w:tc>
+<w:tcPr>
+<w:tcW w:type="dxa" w:w="6560"/>
+<w:tcBorders>
+<w:top w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:left w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:bottom w:val="single" w:color="CCCCCC" w:sz="1"/>
+<w:right w:val="single" w:color="CCCCCC" w:sz="1"/>
+</w:tcBorders>
+<w:tcMar>
+<w:top w:type="dxa" w:w="80"/>
+<w:left w:type="dxa" w:w="120"/>
+<w:bottom w:type="dxa" w:w="80"/>
+<w:right w:type="dxa" w:w="120"/>
+</w:tcMar>
+</w:tcPr>
+<w:p>
+<w:r>
+<w:t xml:space="preserve">Configuration management</w:t>
+</w:r>
+</w:p>
+</w:tc>
+</w:tr>
+</w:tbl>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="Heading2"/>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">6.3 Frontend Technology</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">Framework: React 18+ / Vue 3</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">Charting: Apache ECharts / Chart.js</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">Real-time: WebSocket / Server-Sent Events</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">UI Library: Ant Design / Material-UI</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:r>
+<w:br w:type="page"/>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="Heading1"/>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">7. Interface Requirements</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="Heading2"/>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">7.1 REST API Endpoints</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:r>
+<w:rPr>
+<w:b/>
+<w:bCs/>
+</w:rPr>
+<w:t xml:space="preserve">Device Management API:</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">GET /api/v1/devices - List all devices</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">POST /api/v1/devices - Register new device</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">GET /api/v1/devices/:id - Get device details</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">PUT /api/v1/devices/:id - Update device</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">DELETE /api/v1/devices/:id - Remove device</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:spacing w:before="240"/>
+</w:pPr>
+</w:p>
+<w:p>
+<w:r>
+<w:rPr>
+<w:b/>
+<w:bCs/>
+</w:rPr>
+<w:t xml:space="preserve">Metrics API:</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">GET /api/v1/metrics/:deviceId - Get device metrics</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">GET /api/v1/metrics/:deviceId/interfaces - Interface metrics</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">GET /api/v1/metrics/query - Query metrics with filters</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:spacing w:before="240"/>
+</w:pPr>
+</w:p>
+<w:p>
+<w:r>
+<w:rPr>
+<w:b/>
+<w:bCs/>
+</w:rPr>
+<w:t xml:space="preserve">Configuration API:</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">POST /api/v1/config/execute - Execute commands</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">POST /api/v1/config/backup - Trigger backup</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">GET /api/v1/config/backups/:deviceId - List backups</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">POST /api/v1/config/restore - Restore configuration</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="Heading2"/>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">7.2 WebSocket Events</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">device.status.changed - Device online/offline status</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">metrics.updated - Real-time metrics update</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">alert.triggered - Alert notification</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">config.job.progress - Configuration job progress</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:r>
+<w:br w:type="page"/>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="Heading1"/>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">8. Database Schema</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="Heading2"/>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">8.1 PostgreSQL Tables</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:r>
+<w:rPr>
+<w:b/>
+<w:bCs/>
+</w:rPr>
+<w:t xml:space="preserve">devices</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:r>
+<w:t xml:space="preserve">Menyimpan informasi device inventory.</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">id (UUID, PK)</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">name (VARCHAR)</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">ip_address (INET)</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">device_type (ENUM: router, switch, olt, ont, ap)</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">protocol (ENUM: mikrotik_api, ssh, telnet, tr069, snmp)</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">credentials_id (UUID, FK)</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">status (ENUM: online, offline, unknown)</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">polling_interval (INTEGER, seconds)</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">created_at, updated_at (TIMESTAMP)</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:spacing w:before="240"/>
+</w:pPr>
+</w:p>
+<w:p>
+<w:r>
+<w:rPr>
+<w:b/>
+<w:bCs/>
+</w:rPr>
+<w:t xml:space="preserve">device_credentials</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:r>
+<w:t xml:space="preserve">Encrypted credentials storage.</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">id (UUID, PK)</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">username (VARCHAR)</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">password_encrypted (TEXT)</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">ssh_key_encrypted (TEXT, nullable)</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:spacing w:before="240"/>
+</w:pPr>
+</w:p>
+<w:p>
+<w:r>
+<w:rPr>
+<w:b/>
+<w:bCs/>
+</w:rPr>
+<w:t xml:space="preserve">device_groups</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">id (UUID, PK)</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">name (VARCHAR)</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">parent_id (UUID, FK to device_groups, nullable)</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">description (TEXT)</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:spacing w:before="240"/>
+</w:pPr>
+</w:p>
+<w:p>
+<w:r>
+<w:rPr>
+<w:b/>
+<w:bCs/>
+</w:rPr>
+<w:t xml:space="preserve">alert_rules</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">id (UUID, PK)</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">name (VARCHAR)</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">metric_name (VARCHAR)</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">condition (VARCHAR, e.g., &apos;value &gt; 80&apos;)</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">severity (ENUM: critical, warning, info)</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">enabled (BOOLEAN)</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:spacing w:before="240"/>
+</w:pPr>
+</w:p>
+<w:p>
+<w:r>
+<w:rPr>
+<w:b/>
+<w:bCs/>
+</w:rPr>
+<w:t xml:space="preserve">config_backups</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">id (UUID, PK)</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">device_id (UUID, FK)</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">config_content (TEXT)</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">version (INTEGER)</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">backup_type (ENUM: manual, scheduled, pre_change)</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="2"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">created_at (TIMESTAMP)</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="Heading2"/>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">8.2 InfluxDB Measurements</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:r>
+<w:rPr>
+<w:b/>
+<w:bCs/>
+</w:rPr>
+<w:t xml:space="preserve">device_system</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:r>
+<w:t xml:space="preserve">Tags: device_id, device_name, device_type</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:r>
+<w:t xml:space="preserve">Fields: cpu_usage, memory_usage, disk_usage, uptime, temperature</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:spacing w:before="240"/>
+</w:pPr>
+</w:p>
+<w:p>
+<w:r>
+<w:rPr>
+<w:b/>
+<w:bCs/>
+</w:rPr>
+<w:t xml:space="preserve">interface_traffic</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:r>
+<w:t xml:space="preserve">Tags: device_id, interface_name</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:r>
+<w:t xml:space="preserve">Fields: bytes_in, bytes_out, packets_in, packets_out, errors_in, errors_out, status</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:spacing w:before="240"/>
+</w:pPr>
+</w:p>
+<w:p>
+<w:r>
+<w:rPr>
+<w:b/>
+<w:bCs/>
+</w:rPr>
+<w:t xml:space="preserve">wireless_metrics</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:r>
+<w:t xml:space="preserve">Tags: device_id, interface_name, ssid</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:r>
+<w:t xml:space="preserve">Fields: signal_strength, connected_clients, channel_utilization, tx_rate, rx_rate</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:r>
+<w:br w:type="page"/>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="Heading1"/>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">9. Kesimpulan</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:r>
+<w:t xml:space="preserve">Dokumen SRS ini memberikan spesifikasi lengkap untuk Network Management System yang scalable, reliable, dan maintainable. Dengan menggunakan Go sebagai bahasa pemrograman utama dan arsitektur microservices, sistem ini dirancang untuk mengelola ribuan perangkat jaringan secara efisien.</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:spacing w:before="240"/>
+</w:pPr>
+</w:p>
+<w:p>
+<w:r>
+<w:t xml:space="preserve">Implementasi bertahap yang disarankan:</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="3"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">Phase 1 (Bulan 1-2): Core infrastructure dan basic device management</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="3"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">Phase 2 (Bulan 3-4): Data collection untuk semua protokol</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="3"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">Phase 3 (Bulan 5-6): Configuration management dan alerting</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:pStyle w:val="ListParagraph"/>
+<w:numPr>
+<w:ilvl w:val="0"/>
+<w:numId w:val="3"/>
+</w:numPr>
+</w:pPr>
+<w:r>
+<w:t xml:space="preserve">Phase 4 (Bulan 7-8): Dashboard, reporting, dan optimization</w:t>
+</w:r>
+</w:p>
+<w:p>
+<w:pPr>
+<w:spacing w:before="480"/>
+</w:pPr>
+</w:p>
+<w:p>
+<w:pPr>
+<w:jc w:val="center"/>
+</w:pPr>
+<w:r>
+<w:rPr>
+<w:b/>
+<w:bCs/>
+</w:rPr>
+<w:t xml:space="preserve">--- End of Document ---</w:t>
+</w:r>
+</w:p>
+<w:sectPr>
+<w:pgSz w:w="12240" w:h="15840" w:orient="portrait"/>
+<w:pgMar w:top="1440" w:right="1440" w:bottom="1440" w:left="1440" w:header="708" w:footer="708" w:gutter="0"/>
+<w:pgNumType/>
+<w:docGrid w:linePitch="360"/>
+</w:sectPr>
+</w:body>
+</w:document>

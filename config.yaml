@@ -1,0 +1,25 @@
+server:
+  port: 9090
+  mode: debug
+
+database:
+  host: "localhost"
+  port: 5499
+  user: "nms"
+  password: "nms_password"
+  dbname: "nms_db"
+  sslmode: "disable"
+
+redis:
+  addr: "localhost:6399"
+  password: ""
+  db: 0
+
+nats:
+  url: "nats://localhost:4299"
+
+influx:
+  url: "http://localhost:8099"
+  token: "my-token"
+  org: "nms_org"
+  bucket: "nms_bucket"

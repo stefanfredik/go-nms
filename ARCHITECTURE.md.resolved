@@ -1,0 +1,219 @@
+# Architecture Design: Go-NMS & OpenAccess Integration
+
+## 1. High-Level Overview
+
+Tujuan utama integrasi ini adalah memisahkan concern antara **Business Logic/UI** (OpenAccess) dan **Network Interactions** (Go-NMS).
+
+- **OpenAccess (Laravel)**: Bertindak sebagai *"Brain"* & *"System of Record"*. Menyimpan data pelanggan, inventory perangkat, kredensial, dan menampilkan UI.
+- **Go-NMS (Golang)**: Bertindak sebagai *"Muscle"*. Melakukan pekerjaan berat seperti polling SNMP, eksekusi SSH, dan manajemen koneksi ke perangkat.
+
+```mermaid
+graph TD
+    User((Admin/User))
+    
+    subgraph "OpenAccess (Laravel)"
+        UI[Web UI]
+        DB_OA[(PostgreSQL - Inventory)]
+        Queue[Redis Queue]
+    end
+    
+    subgraph "Go-NMS (Golang)"
+        API[API Gateway]
+        Worker[Worker Pool]
+        Scheduler[Polling Scheduler]
+        DB_NMS[(Redis/Mem - Cache)]
+        TSDB[(InfluxDB/VictoriaMetrics)]
+    end
+    
+    subgraph "Network Devices"
+        Router[[Mikrotik/Cisco]]
+        OLT[[OLT/ONU]]
+    end
+
+    User --> UI
+    UI --> DB_OA
+    
+    %% Communication Flows
+    UI -- "1. Live Action (Reboot/Config)" --> API
+    UI -- "2. Sync Inventory" --> API
+    
+    %% Polling Flow
+    API -- "Sync" --> DB_NMS
+    Scheduler -- "Read Targets" --> DB_NMS
+    Scheduler -- "Job" --> Worker
+    Worker -- "SSH/SNMP/API" --> Router
+    Worker -- "Metrics" --> TSDB
+    
+    %% Visualization
+    UI -- "Read Metrics" --> TSDB
+```
+
+## 2. Key Responsibilities
+
+### OpenAccess (Laravel)
+- **Inventory Management**: CRUD untuk perangkat (Create, Read, Update, Delete).
+- **Credential Storage**: Menyimpan IP, Username, Password, Port, Tipe Driver (aman & terenkripsi).
+- **Visualization**: Menampilkan grafik traffic, status up/down, dan log konfigurasi.
+- **Orchestration**: Memicu sinkronisasi data ke Go-NMS saat terjadi perubahan inventory.
+
+### Go-NMS (Golang)
+- **Protocol Adapter**: implementasi driver untuk berbagai vendor (Mikrotik, Huawei, ZTE, dll).
+- **Concurrency**: Melakukan polling ke ratusan/ribuan perangkat secara paralel (Goroutines).
+- **Live Execution**: Menyediakan API synchronous untuk perintah realtime (misal: "Ping", "Reboot", "Get Neighbors").
+- **Stateless/Cached Inventory**: Go-NMS tidak memiliki database permanen untuk inventory (ideal) atau hanya menyimpan *cache* dari yang dikirim OpenAccess.
+
+## 3. Communication Patterns
+
+Ada dua pola komunikasi utama yang direkomendasikan:
+
+### Scenario A: Live Interaction (Real-time)
+*Contoh: User klik tombol "Reboot" atau "Get Interface List" di dashboard OpenAccess.*
+
+1. **Request**: OpenAccess mengirim HTTP POST ke Go-NMS.
+   ```json
+   POST /api/v1/exec/command
+   {
+       "target": {
+           "ip": "192.168.1.1",
+           "driver": "mikrotik",
+           "auth": {
+               "username": "admin",
+               "password": "secret-password",
+               "port": 8728
+           }
+       },
+       "command": "/system/reboot"
+   }
+   ```
+   *Note: Kredensial dikirim on-the-fly (dienkripsi via TLS) sehingga Go-NMS tidak perlu menyimpan password.*
+
+2. **Processing**: Go-NMS menghubungkan diri ke perangkat, mengeksekusi perintah, dan menutup koneksi.
+3. **Response**: Go-NMS mengembalikan output/status ke OpenAccess.
+
+### Scenario B: Background Monitoring (Polling)
+*Contoh: Mengambil traffic interface setiap 5 menit.*
+
+1. **Inventory Sync**:
+   Setiap kali ada penambahan/perubahan perangkat di OpenAccess, OpenAccess memanggil API `POST /api/v1/inventory/sync` ke Go-NMS untuk memperbarui daftar target monitoring.
+   
+2. **Scheduling**:
+   Go-NMS memiliki internal scheduler (ticker) yang berjalan independen. Ia membaca daftar target dari memori/Redis (hasil sync).
+
+3. **Collection**:
+   Worker Go-NMS mengambil data (SNMP/API) dan menyimpannya langsung ke **Time Series Database (TSDB)** seperti InfluxDB atau Prometheus.
+
+4. **Visualization**:
+   OpenAccess tidak perlu tanya ke Go-NMS untuk data grafik. OpenAccess langsung query ke **TSDB** untuk menampilkan grafik ke user.
+
+## 4. Evaluasi Skenario (Plus & Minus)
+
+### Skenario A: Live Interaction (Direct Request)
+**Cocok untuk:** Reboot, Ping, Get Neighbor, Traceroute, Config Push.
+
+| **Pros (+)** | **Cons (-)** |
+|--------------|--------------|
+| **Real-time Feedback**: User langsung tahu jika perintah gagal/sukses. | **Latency Tinggi**: User harus menunggu koneksi ke router (bisa 1-5 detik). |
+| **Simple Logic**: Tidak perlu scheduler atau state management kompleks di Go-NMS. | **Blocking**: Jika Go-NMS sibuk/hang, UI OpenAccess bisa ikut terasa lambat (pending request). |
+| **Stateless**: Go-NMS tidak perlu menyimpan inventory, semua info dikirim saat request. | **Security Exposure**: Kredensial dikirim bolak-balik via network (perlu TLS ketat). |
+
+### Skenario B: Background Monitoring (Sync & Poll)
+**Cocok untuk:** Traffic graph, CPU load history, Uptime monitoring, Mass Alerts.
+
+| **Pros (+)** | **Cons (-)** |
+|--------------|--------------|
+| **High Performance UI**: OpenAccess query ke local DB/TSDB yang super cepat, tidak perlu tunggu router reply. | **Delayed Data**: Data yang dilihat user bukan "detik ini", tapi "5 menit lalu" (tergantung interval polling). |
+| **Resilient**: Jika router mati/lambat, user experience di OpenAccess tidak terganggu. | **Complexity**: Membutuhkan sinkronisasi inventory (Sync) antara OpenAccess dan Go-NMS. |
+| **Historical Data**: Memungkinkan analisis trend dan alerting jangka panjang. | **Stateful**: Go-NMS perlu menyimpan *current state* dari inventory di Memory/Redis. |
+
+## 5. Selected Architecture: Hybrid Approach
+
+Pendekatan **Hybrid** menggabungkan keunggulan interaksi *real-time* dan *background monitoring*. Ini adalah solusi paling robust untuk NMS skala besar.
+
+### Konsep Utama
+1. **On-Demand (Synchronous)**: Digunakan untuk aksi yang butuh feedback instan (Config, Debugging).
+2. **Background (Asynchronous)**: Digunakan untuk data collecting rutin (Traffic, Health).
+
+### Workflow Detail
+
+#### A. Flow Interaksi Live (On-Demand)
+*User ingin merestart interface atau melihat ping.*
+
+1. **User Request**: User klik tombol di OpenAccess.
+2. **API Call**: OpenAccess mengirim request ke Go-NMS `POST /api/v1/realtime/execute`.
+   - Payload berisi kredensial *sementara* (dienkripsi).
+3. **Execution**: Go-NMS `Worker` langsung connect ke device.
+4. **Response**: Hasil dikembalikan langsung ke OpenAccess UI.
+   - *Timeout*: Default 10-30 detik.
+
+#### B. Flow Monitoring (Background)
+*User ingin melihat grafik traffic 24 jam terakhir.*
+
+1. **Inventory Sync**: 
+   - OpenAccess mendeteksi perubahan device (Create/Update/Delete).
+   - Mengirim event `SyncInventory` ke Go-NMS (via API atau Queue).
+   - Go-NMS mengupdate daftar target di Redis/Memory.
+2. **Scheduled Polling**: 
+   - Go-NMS `Scheduler` berjalan setiap X menit/detik.
+   - `Worker` mengambil data SNMP/API.
+   - Data disimpan ke `InfluxDB` (TimeSeries).
+3. **Data Visualization**:
+   - OpenAccess UI melakukan query langsung ke InfluxDB untuk grafik.
+   - Go-NMS *tidak* terlibat saat user hanya melihat grafik.
+
+```mermaid
+sequenceDiagram
+    participant User
+    participant OA as OpenAccess (PHP)
+    participant NMS as Go-NMS
+    participant DB as InfluxDB
+    participant Dev as Network Device
+
+    Note over User, Dev: Scenario A: Turn On/Off Interface
+    User->>OA: Click "Disable Interface 1"
+    OA->>NMS: POST /execute (cmd: disable, creds: ...)
+    NMS->>Dev: SSH/API Command
+    Dev-->>NMS: Done
+    NMS-->>OA: Status 200 OK
+    OA-->>User: Show "Success" Notification
+
+    Note over User, Dev: Scenario B: View Traffic Graph
+    loop Every 5 Minutes
+        NMS->>Dev: SNMP Get (ifInOctets)
+        Dev-->>NMS: 102400 bytes
+        NMS->>DB: Write Point (host=10.1.1.1, val=102400)
+    end
+    User->>OA: Open Graph Page
+    OA->>DB: Query SELECT mean(val) ...
+    DB-->>OA: TimeSeries Data
+    OA-->>User: Render Chart
+```
+
+## 6. Proposed Data Flow & Storage
+
+| Data Type | Primary Storage | Access Pattern |
+|-----------|----------------|----------------|
+| **Device Credential** | OpenAccess (Postgres) | Dikirim ke Go-NMS saat Sync atau Request Live |
+| **Topology/Metadata** | OpenAccess (Postgres) | OpenAccess UI |
+| **Telemetry (Traffic/CPU)** | TSDB (InfluxDB) | Go-NMS writes -> OpenAccess reads |
+| **Logs/Events** | TSDB / Elasticsearch | Go-NMS writes -> OpenAccess reads |
+
+## 5. Security Recommendations
+
+1. **API Security**: Gunakan **Mutual TLS (mTLS)** atau **Internal API Token** yang divalidasi Go-NMS. Pastikan Go-NMS tidak terekspos ke public internet.
+2. **Credential Handling**: Jangan log password di Go-NMS. Gunakan memory-only structs untuk credentials.
+3. **Network Isolation**: Go-NMS sebaiknya berada di jaringan management yang memiliki akses ke perangkat, sedangkan OpenAccess bisa di jaringan aplikasi (DMZ/Internal).
+
+## 6. Implementation Stages
+
+1. **Phase 1: Direct Proxy (Stateless)**
+   - Implementasi API `/execute` di Go-NMS.
+   - OpenAccess bisa kirim perintah simple via Go-NMS.
+   
+2. **Phase 2: Monitoring Basic**
+   - Implementasi `Inventory Sync`.
+   - Go-NMS mulai melakukan Ping/SNMP polling.
+   - Data masuk ke InfluxDB.
+   
+3. **Phase 3: Advanced Config**
+   - Bulk configuration upgrades.
+   - Backup configuration files.

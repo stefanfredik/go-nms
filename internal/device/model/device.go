@@ -1,6 +1,10 @@
 package model
 
 import (
+	"database/sql/driver"
+	"encoding/json"
+	"errors"
+	"strings"
 	"time"
 )
 
@@ -38,6 +42,45 @@ const (
 	DeviceStatusError   DeviceStatus = "error"
 )
 
+// StringArray is a custom type for Postgres text[] fields
+type StringArray []string
+
+// Value returns the string representation of the array
+func (s StringArray) Value() (driver.Value, error) {
+	if s == nil {
+		return nil, nil
+	}
+	// Postres expects format like {"a","b"}
+	return "{" + strings.Join(s, ",") + "}", nil
+}
+
+// Scan scans the Postgres array representation into a slice
+func (s *StringArray) Scan(value interface{}) error {
+	if value == nil {
+		*s = nil
+		return nil
+	}
+
+	str, ok := value.(string)
+	if !ok {
+		// Some drivers might return []byte
+		bytes, ok := value.([]byte)
+		if !ok {
+			return errors.New("type assertion to string/[]byte failed")
+		}
+		str = string(bytes)
+	}
+
+	// Remove {} and split by ,
+	str = strings.Trim(str, "{}")
+	if str == "" {
+		*s = []string{}
+		return nil
+	}
+	*s = strings.Split(str, ",")
+	return nil
+}
+
 // Device represents a network device
 type Device struct {
 	ID              string       `json:"id" gorm:"primaryKey;type:uuid;default:gen_random_uuid()"`
@@ -47,10 +90,10 @@ type Device struct {
 	Protocol        Protocol     `json:"protocol" gorm:"not null;size:50"`
 	Status          DeviceStatus `json:"status" gorm:"size:20;default:'unknown'"`
 	PollingInterval int          `json:"polling_interval" gorm:"default:300"` // seconds
-	CredentialsID   string       `json:"credentials_id" gorm:"type:uuid"`
+	CredentialsID   *string      `json:"credentials_id" gorm:"type:uuid"`
 	GroupID         *string      `json:"group_id,omitempty" gorm:"type:uuid"`
 	Description     string       `json:"description" gorm:"type:text"`
-	Tags            []string     `json:"tags" gorm:"type:text[]"`
+	Tags            StringArray  `json:"tags" gorm:"type:text[]"`
 	Metadata        JSONMap      `json:"metadata" gorm:"type:jsonb"`
 	LastSeen        *time.Time   `json:"last_seen,omitempty"`
 	LastError       string       `json:"last_error,omitempty" gorm:"type:text"`
@@ -79,12 +122,12 @@ type DeviceCredentials struct {
 
 // DeviceGroup represents a logical grouping of devices
 type DeviceGroup struct {
-	ID          string     `json:"id" gorm:"primaryKey;type:uuid;default:gen_random_uuid()"`
-	Name        string     `json:"name" gorm:"not null;size:255;uniqueIndex"`
-	ParentID    *string    `json:"parent_id,omitempty" gorm:"type:uuid"`
-	Description string     `json:"description" gorm:"type:text"`
-	CreatedAt   time.Time  `json:"created_at"`
-	UpdatedAt   time.Time  `json:"updated_at"`
+	ID          string    `json:"id" gorm:"primaryKey;type:uuid;default:gen_random_uuid()"`
+	Name        string    `json:"name" gorm:"not null;size:255;uniqueIndex"`
+	ParentID    *string   `json:"parent_id,omitempty" gorm:"type:uuid"`
+	Description string    `json:"description" gorm:"type:text"`
+	CreatedAt   time.Time `json:"created_at"`
+	UpdatedAt   time.Time `json:"updated_at"`
 
 	// Relationships
 	Parent   *DeviceGroup   `json:"parent,omitempty" gorm:"foreignKey:ParentID"`
@@ -123,4 +166,25 @@ func (d *Device) SupportsProtocol(protocol Protocol) bool {
 // GetPollingIntervalDuration returns polling interval as time.Duration
 func (d *Device) GetPollingIntervalDuration() time.Duration {
 	return time.Duration(d.PollingInterval) * time.Second
+}
+
+// Value returns the JSON encoding of the map
+func (j JSONMap) Value() (driver.Value, error) {
+	if j == nil {
+		return nil, nil
+	}
+	return json.Marshal(j)
+}
+
+// Scan scans the JSON encoded value into the map
+func (j *JSONMap) Scan(value interface{}) error {
+	if value == nil {
+		*j = nil
+		return nil
+	}
+	bytes, ok := value.([]byte)
+	if !ok {
+		return errors.New("type assertion to []byte failed")
+	}
+	return json.Unmarshal(bytes, &j)
 }

@@ -1,0 +1,10 @@
+2026/02/17 17:00:18 Starting Alert Service...
+2026/02/17 17:00:18 Alert Engine started, subscribing to nms.metrics
+2026/02/17 17:00:28 ⚡ ALERT [critical]: Device  (10.70.94.190) - Device Down (Value: 0.00)
+2026/02/17 17:00:28 📧 Sending Email to admin@example.com | Subject: NMS Alert: Device Down | Body: ALERT [critical]: Device  (10.70.94.190) - Device Down (Value: 0.00)
+2026/02/17 17:00:38 ⚡ ALERT [critical]: Device  (10.70.94.190) - Device Down (Value: 0.00)
+2026/02/17 17:00:38 📧 Sending Email to admin@example.com | Subject: NMS Alert: Device Down | Body: ALERT [critical]: Device  (10.70.94.190) - Device Down (Value: 0.00)
+2026/02/17 17:00:48 ⚡ ALERT [critical]: Device  (10.70.94.190) - Device Down (Value: 0.00)
+2026/02/17 17:00:48 📧 Sending Email to admin@example.com | Subject: NMS Alert: Device Down | Body: ALERT [critical]: Device  (10.70.94.190) - Device Down (Value: 0.00)
+2026/02/17 17:00:58 ⚡ ALERT [critical]: Device  (10.70.94.190) - Device Down (Value: 0.00)
+2026/02/17 17:00:58 📧 Sending Email to admin@example.com | Subject: NMS Alert: Device Down | Body: ALERT [critical]: Device  (10.70.94.190) - Device Down (Value: 0.00)

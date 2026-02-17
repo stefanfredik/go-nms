@@ -1,0 +1,18 @@
+2026/02/17 17:00:18 Starting Worker Service...
+2026/02/17 17:00:18 Worker started, subscribing to nms.poll.tasks
+Initial worker received task: {2415d02b-b701-421a-a740-08403a9dfa63 10.70.94.190 router mikrotik_api 2026-02-17 17:00:28.932964342 +0000 UTC}
+Initial worker received task: {ef2a606c-f16d-4a3b-9d4c-5d6d3fa12215 192.168.100.2 router mikrotik_api 2026-02-17 17:00:28.933048502 +0000 UTC}
+Initial worker received task: {976564d3-fd93-4fc7-ae5e-5ec240c769d4 192.168.100.1 router mikrotik_api 2026-02-17 17:00:28.933057837 +0000 UTC}
+2026/02/17 17:00:28 Error writing metrics to Influx: unauthorized: unauthorized access
+Initial worker received task: {2415d02b-b701-421a-a740-08403a9dfa63 10.70.94.190 router mikrotik_api 2026-02-17 17:00:38.930805552 +0000 UTC}
+Initial worker received task: {ef2a606c-f16d-4a3b-9d4c-5d6d3fa12215 192.168.100.2 router mikrotik_api 2026-02-17 17:00:38.930845293 +0000 UTC}
+Initial worker received task: {976564d3-fd93-4fc7-ae5e-5ec240c769d4 192.168.100.1 router mikrotik_api 2026-02-17 17:00:38.930851759 +0000 UTC}
+2026/02/17 17:00:38 Error writing metrics to Influx: unauthorized: unauthorized access
+Initial worker received task: {2415d02b-b701-421a-a740-08403a9dfa63 10.70.94.190 router mikrotik_api 2026-02-17 17:00:48.929954219 +0000 UTC}
+Initial worker received task: {ef2a606c-f16d-4a3b-9d4c-5d6d3fa12215 192.168.100.2 router mikrotik_api 2026-02-17 17:00:48.929985861 +0000 UTC}
+Initial worker received task: {976564d3-fd93-4fc7-ae5e-5ec240c769d4 192.168.100.1 router mikrotik_api 2026-02-17 17:00:48.92999485 +0000 UTC}
+2026/02/17 17:00:48 Error writing metrics to Influx: unauthorized: unauthorized access
+Initial worker received task: {2415d02b-b701-421a-a740-08403a9dfa63 10.70.94.190 router mikrotik_api 2026-02-17 17:00:58.93932739 +0000 UTC}
+Initial worker received task: {ef2a606c-f16d-4a3b-9d4c-5d6d3fa12215 192.168.100.2 router mikrotik_api 2026-02-17 17:00:58.939370137 +0000 UTC}
+Initial worker received task: {976564d3-fd93-4fc7-ae5e-5ec240c769d4 192.168.100.1 router mikrotik_api 2026-02-17 17:00:58.939375713 +0000 UTC}
+2026/02/17 17:00:58 Error writing metrics to Influx: unauthorized: unauthorized access
