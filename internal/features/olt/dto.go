@@ -98,3 +98,10 @@ type ONTListResponse struct {
 	Total     int           `json:"total"`
 	ONTs      []ONTResponse `json:"onts"`
 }
+
+// ONTStatusResponse wraps lists of ONTs strictly categorized by status.
+type ONTStatusResponse struct {
+	IPAddress string        `json:"ip_address"`
+	Up        []ONTResponse `json:"up"`
+	Down      []ONTResponse `json:"down"`
+}

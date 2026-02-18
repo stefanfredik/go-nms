@@ -82,6 +82,26 @@ func (h *Handler) GetONTs(c *gin.Context) {
 	c.JSON(http.StatusOK, onts)
 }
 
+// GetONTStatus handles POST /api/v1/olt/ont-status
+//
+// Returns ONTs categorized by their operational status (Up/Down).
+func (h *Handler) GetONTStatus(c *gin.Context) {
+	// usage: Use GetSystemMetricsRequest since it only contains Target, which is exactly what we need.
+	var req GetSystemMetricsRequest
+	if err := c.ShouldBindJSON(&req); err != nil {
+		c.JSON(http.StatusBadRequest, gin.H{"error": "invalid request body: " + err.Error()})
+		return
+	}
+
+	status, err := h.service.GetONTStatus(c.Request.Context(), req.Target)
+	if err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
+		return
+	}
+
+	c.JSON(http.StatusOK, status)
+}
+
 // RegisterRoutes registers all OLT routes on the given Gin router group.
 func RegisterRoutes(group *gin.RouterGroup, service OLTService) {
 	h := NewHandler(service)
@@ -96,5 +116,8 @@ func RegisterRoutes(group *gin.RouterGroup, service OLTService) {
 
 		// POST /api/v1/olt/onts       — ONT list (filter by pon_port in body)
 		oltGroup.POST("/onts", h.GetONTs)
+
+		// POST /api/v1/olt/ont-status — ONT status list (up/down)
+		oltGroup.POST("/ont-status", h.GetONTStatus)
 	}
 }

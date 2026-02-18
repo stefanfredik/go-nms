@@ -24,6 +24,9 @@ type OLTService interface {
 	// GetONTs returns metrics for all ONTs on the OLT at the given target.
 	// If ponPortIndex > 0, only ONTs on that specific PON port are returned.
 	GetONTs(ctx context.Context, target SNMPTarget, ponPortIndex int) (*ONTListResponse, error)
+
+	// GetONTStatus returns ONTs categorized by their operational status (Up/Down).
+	GetONTStatus(ctx context.Context, target SNMPTarget) (*ONTStatusResponse, error)
 }
 
 type oltService struct {
@@ -101,6 +104,40 @@ func (s *oltService) GetONTs(ctx context.Context, target SNMPTarget, ponPortInde
 		IPAddress: target.IP,
 		Total:     len(responses),
 		ONTs:      responses,
+	}, nil
+}
+
+// GetONTStatus retrieves all ONTs and categorizes them into Up and Down.
+func (s *oltService) GetONTStatus(ctx context.Context, target SNMPTarget) (*ONTStatusResponse, error) {
+	client, err := s.connectToOLT(ctx, target)
+	if err != nil {
+		return nil, err
+	}
+	defer client.Disconnect()
+
+	// Fetch all ONTs (ponPortIndex=0)
+	onts, err := client.GetONTMetrics(ctx, 0)
+	if err != nil {
+		return nil, fmt.Errorf("failed to get ONT metrics from OLT %s: %w", target.IP, err)
+	}
+
+	up := make([]ONTResponse, 0)
+	down := make([]ONTResponse, 0)
+
+	for _, o := range onts {
+		resp := mapONT(target.IP, o)
+		// "up" (case-insensitive) usually signifies operational status
+		if o.OperStatus.String() == "up" {
+			up = append(up, resp)
+		} else {
+			down = append(down, resp)
+		}
+	}
+
+	return &ONTStatusResponse{
+		IPAddress: target.IP,
+		Up:        up,
+		Down:      down,
 	}, nil
 }
 
