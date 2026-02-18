@@ -9,6 +9,7 @@ import (
 	"github.com/yourorg/nms-go/internal/device/service"
 	"github.com/yourorg/nms-go/internal/features/execution"
 	"github.com/yourorg/nms-go/internal/features/monitoring"
+	"github.com/yourorg/nms-go/internal/features/olt"
 	"gorm.io/gorm"
 )
 
@@ -59,6 +60,16 @@ func NewRouter(cfg *config.Config, db *gorm.DB, monitoringHandler *monitoring.Ha
 
 		// Monitoring feature (Background)
 		v1.POST("/inventory/sync", monitoringHandler.SyncInventory)
+
+		// OLT feature — exposes ZTE C320 SNMP data to openaccess and nms-rekayasa.
+		// openaccess is the single source of truth for device inventory;
+		// go-nms connects directly to OLTs using IP + SNMP credentials from the request body.
+		// Endpoints:
+		//   POST /api/v1/olt/system     — system metrics (CPU, memory, uptime, temperature)
+		//   POST /api/v1/olt/pon-ports  — PON port status and optical power
+		//   POST /api/v1/olt/onts       — ONT list (optional pon_port filter in body)
+		oltService := olt.NewOLTService()
+		olt.RegisterRoutes(v1, oltService)
 	}
 
 	return r
