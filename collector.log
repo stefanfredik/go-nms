@@ -1,2 +1,79 @@
 2026/02/17 17:00:18 Starting Collector Service...
 2026/02/17 17:00:18 Collector Scheduler started
+
+2026/02/18 11:28:51 [32m/home/homenet/dev/go-nms/internal/device/repository/device_repo.go:106 [33mSLOW SQL >= 200ms
+[0m[31;1m[9335.244ms] [33m[rows:3][35m SELECT * FROM "devices" LIMIT 20[0m
+
+2026/02/18 11:28:53 [32m/home/homenet/dev/go-nms/internal/device/repository/device_repo.go:136 [33mSLOW SQL >= 200ms
+[0m[31;1m[1356.928ms] [33m[rows:1][35m SELECT count(*) FROM "devices"[0m
+
+2026/02/18 11:28:54 [32m/home/homenet/dev/go-nms/internal/device/repository/device_repo.go:106 [33mSLOW SQL >= 200ms
+[0m[31;1m[1281.250ms] [33m[rows:3][35m SELECT * FROM "devices" LIMIT 20[0m
+
+2026/02/18 11:28:56 [32m/home/homenet/dev/go-nms/internal/device/repository/device_repo.go:136 [33mSLOW SQL >= 200ms
+[0m[31;1m[1370.880ms] [33m[rows:1][35m SELECT count(*) FROM "devices"[0m
+
+2026/02/18 11:29:08 [32m/home/homenet/dev/go-nms/internal/device/repository/device_repo.go:106 [33mSLOW SQL >= 200ms
+[0m[31;1m[7924.122ms] [33m[rows:3][35m SELECT * FROM "devices" LIMIT 20[0m
+
+2026/02/18 11:29:15 [32m/home/homenet/dev/go-nms/internal/device/repository/device_repo.go:136 [33mSLOW SQL >= 200ms
+[0m[31;1m[5549.827ms] [33m[rows:1][35m SELECT count(*) FROM "devices"[0m
+
+2026/02/18 11:29:35 [32m/home/homenet/dev/go-nms/internal/device/repository/device_repo.go:106 [33mSLOW SQL >= 200ms
+[0m[31;1m[15548.737ms] [33m[rows:3][35m SELECT * FROM "devices" LIMIT 20[0m
+
+2026/02/18 11:29:46 [32m/home/homenet/dev/go-nms/internal/device/repository/device_repo.go:136 [33mSLOW SQL >= 200ms
+[0m[31;1m[8616.349ms] [33m[rows:1][35m SELECT count(*) FROM "devices"[0m
+
+2026/02/18 11:35:18 [32m/home/homenet/dev/go-nms/internal/device/repository/device_repo.go:106 [33mSLOW SQL >= 200ms
+[0m[31;1m[330771.629ms] [33m[rows:3][35m SELECT * FROM "devices" LIMIT 20[0m
+
+2026/02/18 12:02:30 [32m/home/homenet/dev/go-nms/internal/device/repository/device_repo.go:106 [33mSLOW SQL >= 200ms
+[0m[31;1m[873.074ms] [33m[rows:3][35m SELECT * FROM "devices" LIMIT 20[0m
+
+2026/02/18 12:03:50 [32m/home/homenet/dev/go-nms/internal/device/repository/device_repo.go:106 [33mSLOW SQL >= 200ms
+[0m[31;1m[1013.388ms] [33m[rows:3][35m SELECT * FROM "devices" LIMIT 20[0m
+
+2026/02/18 12:03:51 [32m/home/homenet/dev/go-nms/internal/device/repository/device_repo.go:136 [33mSLOW SQL >= 200ms
+[0m[31;1m[773.812ms] [33m[rows:1][35m SELECT count(*) FROM "devices"[0m
+
+2026/02/18 12:04:19 [32m/home/homenet/dev/go-nms/internal/device/repository/device_repo.go:106 [33mSLOW SQL >= 200ms
+[0m[31;1m[211.836ms] [33m[rows:3][35m SELECT * FROM "devices" LIMIT 20[0m
+
+2026/02/18 12:04:39 [32m/home/homenet/dev/go-nms/internal/device/repository/device_repo.go:106 [33mSLOW SQL >= 200ms
+[0m[31;1m[209.990ms] [33m[rows:3][35m SELECT * FROM "devices" LIMIT 20[0m
+
+2026/02/18 12:04:59 [32m/home/homenet/dev/go-nms/internal/device/repository/device_repo.go:106 [33mSLOW SQL >= 200ms
+[0m[31;1m[476.104ms] [33m[rows:3][35m SELECT * FROM "devices" LIMIT 20[0m
+
+2026/02/18 12:05:09 [32m/home/homenet/dev/go-nms/internal/device/repository/device_repo.go:106 [33mSLOW SQL >= 200ms
+[0m[31;1m[495.106ms] [33m[rows:3][35m SELECT * FROM "devices" LIMIT 20[0m
+
+2026/02/18 12:05:10 [32m/home/homenet/dev/go-nms/internal/device/repository/device_repo.go:136 [33mSLOW SQL >= 200ms
+[0m[31;1m[460.708ms] [33m[rows:1][35m SELECT count(*) FROM "devices"[0m
+
+2026/02/18 12:42:59 [32m/home/homenet/dev/go-nms/internal/device/repository/device_repo.go:106 [33mSLOW SQL >= 200ms
+[0m[31;1m[355.998ms] [33m[rows:3][35m SELECT * FROM "devices" LIMIT 20[0m
+
+2026/02/18 12:43:09 [32m/home/homenet/dev/go-nms/internal/device/repository/device_repo.go:106 [33mSLOW SQL >= 200ms
+[0m[31;1m[221.285ms] [33m[rows:3][35m SELECT * FROM "devices" LIMIT 20[0m
+
+2026/02/18 12:46:45 [32m/home/homenet/dev/go-nms/internal/device/repository/device_repo.go:106 [33mSLOW SQL >= 200ms
+[0m[31;1m[116477.836ms] [33m[rows:3][35m SELECT * FROM "devices" LIMIT 20[0m
+
+2026/02/18 12:46:54 [32m/home/homenet/dev/go-nms/internal/device/repository/device_repo.go:136 [33mSLOW SQL >= 200ms
+[0m[31;1m[5186.808ms] [33m[rows:1][35m SELECT count(*) FROM "devices"[0m
+
+2026/02/18 12:47:04 [32m/home/homenet/dev/go-nms/internal/device/repository/device_repo.go:106 [33mSLOW SQL >= 200ms
+[0m[31;1m[8908.631ms] [33m[rows:3][35m SELECT * FROM "devices" LIMIT 20[0m
+
+2026/02/18 12:47:05 [32m/home/homenet/dev/go-nms/internal/device/repository/device_repo.go:136 [33mSLOW SQL >= 200ms
+[0m[31;1m[264.605ms] [33m[rows:1][35m SELECT count(*) FROM "devices"[0m
+
+2026/02/18 14:30:39 [32m/home/homenet/dev/go-nms/internal/device/repository/device_repo.go:106 [33mSLOW SQL >= 200ms
+[0m[31;1m[229.333ms] [33m[rows:3][35m SELECT * FROM "devices" LIMIT 20[0m
+
+2026/02/19 05:20:39 [32m/home/homenet/dev/go-nms/internal/device/repository/device_repo.go:106 [33mSLOW SQL >= 200ms
+[0m[31;1m[276.262ms] [33m[rows:3][35m SELECT * FROM "devices" LIMIT 20[0m
+2026/02/20 03:08:24 Stopping Collector Service...
+2026/02/20 03:08:24 Collector Scheduler stopped

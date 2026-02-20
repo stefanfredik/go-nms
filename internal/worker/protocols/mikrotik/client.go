@@ -31,8 +31,9 @@ type SystemMetrics struct {
 type InterfaceMetrics struct {
 	DeviceID      string
 	InterfaceName string
+	Type          string
 	Timestamp     time.Time
-	Status        string // up, down, disabled
+	Status        string // running, down
 	BytesIn       uint64
 	BytesOut      uint64
 	PacketsIn     uint64
@@ -190,27 +191,51 @@ func (m *MikrotikClient) GetSystemMetrics(ctx context.Context) (*SystemMetrics, 
 		metrics.DiskUsage = float64(used) / float64(metrics.DiskTotal) * 100
 	}
 
-	// Parse uptime
-	if uptime, ok := res["uptime"]; ok {
-		// Uptime format: 1w2d3h4m5s - need to parse this
-		duration := parseRouterOSUptime(uptime)
+	// Parse uptime — try both key variants used by different RouterOS versions
+	uptimeRaw := ""
+	if v, ok := res["uptime"]; ok {
+		uptimeRaw = v
+	} else if v, ok := res["up-time"]; ok {
+		uptimeRaw = v
+	}
+	if uptimeRaw != "" {
+		duration := ParseRouterOSUptime(uptimeRaw)
 		metrics.Uptime = int64(duration.Seconds())
 	}
 
 	// Get health info
+	// RouterOS v7+ returns one row per sensor: {name, value, type}
+	// RouterOS v6 returns a single row: {temperature, voltage, ...}
 	healthReply, err := m.client.Run("/system/health/print")
 	if err == nil && len(healthReply.Re) > 0 {
-		health := healthReply.Re[0].Map
-
-		if temp, ok := health["temperature"]; ok {
-			if t, err := strconv.ParseFloat(temp, 64); err == nil {
-				metrics.Temperature = t
+		// Try v7+ multi-row format first
+		for _, row := range healthReply.Re {
+			sensorName := row.Map["name"]
+			sensorValue := row.Map["value"]
+			switch sensorName {
+			case "temperature":
+				if t, err := strconv.ParseFloat(sensorValue, 64); err == nil {
+					metrics.Temperature = t
+				}
+			case "voltage":
+				if v, err := strconv.ParseFloat(sensorValue, 64); err == nil {
+					metrics.Voltage = v
+				}
 			}
 		}
 
-		if voltage, ok := health["voltage"]; ok {
-			if v, err := strconv.ParseFloat(voltage, 64); err == nil {
-				metrics.Voltage = v
+		// Fallback: v6 single-row format
+		if metrics.Temperature == 0 {
+			firstRow := healthReply.Re[0].Map
+			if temp, ok := firstRow["temperature"]; ok {
+				if t, err := strconv.ParseFloat(temp, 64); err == nil {
+					metrics.Temperature = t
+				}
+			}
+			if voltage, ok := firstRow["voltage"]; ok {
+				if v, err := strconv.ParseFloat(voltage, 64); err == nil {
+					metrics.Voltage = v
+				}
 			}
 		}
 	}
@@ -224,7 +249,17 @@ func (m *MikrotikClient) GetInterfaceMetrics(ctx context.Context) ([]*InterfaceM
 		return nil, fmt.Errorf("not connected")
 	}
 
-	// Get interface statistics
+	// First fetch interface types (no =stats flag, returns type/name/running)
+	typeReply, err := m.client.Run("/interface/print")
+	ifaceTypes := map[string]string{}
+	if err == nil {
+		for _, iface := range typeReply.Re {
+			name := iface.Map["name"]
+			ifaceTypes[name] = iface.Map["type"]
+		}
+	}
+
+	// Now fetch counters with =stats
 	reply, err := m.client.Run("/interface/print", "=stats")
 	if err != nil {
 		return nil, fmt.Errorf("failed to get interface stats: %w", err)
@@ -234,11 +269,18 @@ func (m *MikrotikClient) GetInterfaceMetrics(ctx context.Context) ([]*InterfaceM
 	timestamp := time.Now()
 
 	for _, iface := range reply.Re {
+		running := iface.Map["running"]
+		status := "down"
+		if running == "true" {
+			status = "running"
+		}
+
 		m := &InterfaceMetrics{
 			DeviceID:      m.device.ID,
 			InterfaceName: iface.Map["name"],
+			Type:          ifaceTypes[iface.Map["name"]],
 			Timestamp:     timestamp,
-			Status:        iface.Map["running"],
+			Status:        status,
 		}
 
 		// Parse counters
@@ -331,16 +373,76 @@ func (m *MikrotikClient) GetWirelessMetrics(ctx context.Context) ([]map[string]i
 	return metrics, nil
 }
 
-// parseRouterOSUptime parses RouterOS uptime format (e.g., "1w2d3h4m5s")
-func parseRouterOSUptime(uptime string) time.Duration {
-	// This is a simplified parser - production code should be more robust
-	var duration time.Duration
+// ParseRouterOSUptime parses RouterOS uptime in two formats:
+//   - API format:  "125d20:47:30"  or  "20:47:30"  (DDdHH:MM:SS)
+//   - CLI format:  "1w2d3h4m5s"   (returned by some older RouterOS builds)
+func ParseRouterOSUptime(uptime string) time.Duration {
+	uptime = strings.TrimSpace(uptime)
+	if uptime == "" {
+		return 0
+	}
 
-	// Parse weeks, days, hours, minutes, seconds
-	// Implementation depends on actual format received from device
-	// This is a placeholder
+	var total time.Duration
 
-	return duration
+	// ── Handle optional weeks prefix (e.g. "3w") ──────────────────────────────
+	if idx := strings.Index(uptime, "w"); idx > 0 && !strings.ContainsAny(uptime[:idx], ":dhms") {
+		if n, err := strconv.ParseInt(uptime[:idx], 10, 64); err == nil {
+			total += time.Duration(n) * 7 * 24 * time.Hour
+		}
+		uptime = uptime[idx+1:]
+	}
+
+	// ── Handle optional days prefix (e.g. "125d") ─────────────────────────────
+	if idx := strings.Index(uptime, "d"); idx > 0 && !strings.ContainsAny(uptime[:idx], ":hms") {
+		if n, err := strconv.ParseInt(uptime[:idx], 10, 64); err == nil {
+			total += time.Duration(n) * 24 * time.Hour
+		}
+		uptime = uptime[idx+1:]
+	}
+
+	// ── Remaining part: either HH:MM:SS or XhXmXs ────────────────────────────
+	if strings.Contains(uptime, ":") {
+		// RouterOS API format: "20:47:30"
+		parts := strings.Split(uptime, ":")
+		if len(parts) >= 3 {
+			h, _ := strconv.ParseInt(strings.TrimSpace(parts[0]), 10, 64)
+			m, _ := strconv.ParseInt(strings.TrimSpace(parts[1]), 10, 64)
+			s, _ := strconv.ParseInt(strings.TrimSpace(parts[2]), 10, 64)
+			total += time.Duration(h)*time.Hour + time.Duration(m)*time.Minute + time.Duration(s)*time.Second
+		} else if len(parts) == 2 {
+			h, _ := strconv.ParseInt(strings.TrimSpace(parts[0]), 10, 64)
+			m, _ := strconv.ParseInt(strings.TrimSpace(parts[1]), 10, 64)
+			total += time.Duration(h)*time.Hour + time.Duration(m)*time.Minute
+		}
+	} else {
+		// Legacy CLI format: "3h25m10s"
+		for _, u := range []struct {
+			suffix string
+			mult   time.Duration
+		}{
+			{"h", time.Hour},
+			{"m", time.Minute},
+			{"s", time.Second},
+		} {
+			idx := strings.Index(uptime, u.suffix)
+			if idx <= 0 {
+				continue
+			}
+			start := idx
+			for start > 0 && uptime[start-1] >= '0' && uptime[start-1] <= '9' {
+				start--
+			}
+			if start == idx {
+				continue
+			}
+			if n, err := strconv.ParseInt(uptime[start:idx], 10, 64); err == nil {
+				total += time.Duration(n) * u.mult
+			}
+			uptime = uptime[idx+len(u.suffix):]
+		}
+	}
+
+	return total
 }
 
 // ValidateConnection performs a quick connection test

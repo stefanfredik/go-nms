@@ -1,0 +1,35 @@
+# .dockerignore
+# File dan folder yang tidak perlu disertakan saat build Docker image
+
+# Git
+.git
+.gitignore
+
+# Dev files
+.env*
+*.env
+docker-compose.dev.yml
+.air.toml
+tmp/
+
+# Build outputs
+bin/
+*.log
+
+# Test files
+test/
+*_test.go
+coverage.out
+coverage.html
+
+# Documentation
+docs/
+*.md
+*.pdf
+*.docx
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo

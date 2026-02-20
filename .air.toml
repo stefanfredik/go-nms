@@ -1,0 +1,45 @@
+# .air.toml
+# Konfigurasi untuk `air` - hot reload tool untuk Go.
+# Jalankan dengan: air
+# atau: make dev
+
+root = "."
+tmp_dir = "tmp"
+
+[build]
+  # Perintah build yang dijalankan saat ada perubahan file
+  cmd = "go build -o ./tmp/api-gateway ./cmd/api-gateway"
+
+  # Binary yang akan dijalankan setelah build berhasil
+  bin = "./tmp/api-gateway"
+
+  # File .env yang dibaca saat menjalankan binary
+  env_file = ".env.dev"
+
+  # File dan folder yang dipantau perubahannya
+  include_ext = ["go", "yaml", "yml", "json"]
+  exclude_dir  = ["tmp", "bin", "vendor", "testdata", "deployments", "docs"]
+  exclude_file = []
+
+  # Delay sebelum rebuild (miliseconds) - beri waktu agar semua file tersimpan
+  delay = 500
+
+  # Apakah akan langsung stop saat build gagal
+  stop_on_error = false
+
+  # Tampilkan output dari binary yang dijalankan
+  log = "air.log"
+
+[log]
+  # Tampilkan waktu di log air
+  time = true
+
+[color]
+  main     = "magenta"
+  watcher  = "cyan"
+  build    = "yellow"
+  runner   = "green"
+
+[misc]
+  # Hapus tmp/ saat air berhenti
+  clean_on_exit = true

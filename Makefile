@@ -1,11 +1,46 @@
-.PHONY: help build test run clean docker migrate lint
+.PHONY: help build test run clean docker migrate lint dev dev-infra dev-down dev-logs dev-status install-air
 
 # Default target
 .DEFAULT_GOAL := help
 
 # Variables
 BINARY_DIR=bin
+GOPATH ?= $(shell go env GOPATH)
 SERVICES=api-gateway device-service collector-service worker config-service alert-service notification-service analytics-service
+
+# =============================================================================
+# DEVELOPMENT ENVIRONMENT
+# =============================================================================
+
+dev-infra: ## Jalankan infrastruktur (postgres, redis, nats, influxdb) di Docker
+	@echo "🚀 Menjalankan infrastruktur development..."
+	docker compose -f docker-compose.dev.yml up -d
+	@echo "✅ Infrastruktur siap:"
+	@echo "   PostgreSQL : localhost:5499"
+	@echo "   Redis      : localhost:6399"
+	@echo "   NATS       : localhost:4299"
+	@echo "   InfluxDB   : localhost:8099"
+	@echo ""
+	@echo "Selanjutnya jalankan: make dev"
+
+dev: ## Jalankan api-gateway dengan hot-reload (air) - butuh `make dev-infra` terlebih dahulu
+	@echo "🔥 Menjalankan api-gateway dengan hot-reload..."
+	@$(GOPATH)/bin/air
+
+dev-down: ## Hentikan dan hapus infrastruktur development
+	@echo "🛑 Menghentikan infrastruktur..."
+	docker compose -f docker-compose.dev.yml down
+
+dev-logs: ## Tampilkan log infrastruktur development
+	docker compose -f docker-compose.dev.yml logs -f
+
+dev-status: ## Tampilkan status container development
+	docker compose -f docker-compose.dev.yml ps
+
+install-air: ## Install air (hot-reload tool untuk Go)
+	@echo "📦 Menginstall air..."
+	go install github.com/air-verse/air@latest
+	@echo "✅ air berhasil diinstall di $(GOPATH)/bin/air"
 
 # Help command
 help: ## Show this help message

@@ -1,5 +1,3 @@
-version: "3.8"
-
 services:
   postgres:
     image: postgres:14-alpine
@@ -11,6 +9,11 @@ services:
       - "5499:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U nms -d nms_db"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
 
   redis:
     image: redis:7-alpine
@@ -18,12 +21,22 @@ services:
       - "6399:6379"
     volumes:
       - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
 
   nats:
     image: nats:2-alpine
     ports:
       - "4299:4222"
       - "8299:8222"
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--spider", "http://localhost:8222/healthz"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
 
   influxdb:
     image: influxdb:2.7-alpine
@@ -33,10 +46,47 @@ services:
       DOCKER_INFLUXDB_INIT_PASSWORD: nms_password
       DOCKER_INFLUXDB_INIT_ORG: nms_org
       DOCKER_INFLUXDB_INIT_BUCKET: nms_bucket
+      DOCKER_INFLUXDB_INIT_ADMIN_TOKEN: my-token
     ports:
       - "8099:8086"
     volumes:
       - influxdb_data:/var/lib/influxdb2
+    healthcheck:
+      test: ["CMD", "influx", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  api-gateway:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      SERVER_PORT: 9090
+      SERVER_MODE: debug
+      DATABASE_HOST: postgres
+      DATABASE_PORT: 5432
+      DATABASE_USER: nms
+      DATABASE_PASSWORD: nms_password
+      DATABASE_DBNAME: nms_db
+      REDIS_ADDR: redis:6379
+      NATS_URL: nats://nats:4222
+      INFLUX_URL: http://influxdb:8086
+      INFLUX_TOKEN: my-token
+      INFLUX_ORG: nms_org
+      INFLUX_BUCKET: nms_bucket
+    ports:
+      - "9090:9090"
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      nats:
+        condition: service_healthy
+      influxdb:
+        condition: service_healthy
+    restart: unless-stopped
 
 volumes:
   postgres_data:

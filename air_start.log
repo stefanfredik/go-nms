@@ -1,0 +1,158 @@
+🔥 Menjalankan api-gateway dengan hot-reload...
+[warning] build.bin is deprecated; set build.entrypoint instead
+
+  __    _   ___  
+ / /\  | | | |_) 
+/_/--\ |_| |_| \_ v1.64.5, built with Go go1.25.7
+
+[05:55:21] mkdir /home/homenet/dev/go-nms/tmp
+[05:55:21] watching .
+[05:55:21] watching api
+[05:55:21] watching api/graphql
+[05:55:21] watching api/openapi
+[05:55:21] watching api/proto
+[05:55:21] !exclude bin
+[05:55:21] watching cmd
+[05:55:21] watching cmd/alert
+[05:55:21] watching cmd/alert-service
+[05:55:21] watching cmd/analytics-service
+[05:55:21] watching cmd/api-gateway
+[05:55:21] watching cmd/collector
+[05:55:21] watching cmd/collector-service
+[05:55:21] watching cmd/config-service
+[05:55:21] watching cmd/device-service
+[05:55:21] watching cmd/migrate
+[05:55:21] watching cmd/notification-service
+[05:55:21] watching cmd/snmpwalk_zte
+[05:55:21] watching cmd/verify_alert
+[05:55:21] watching cmd/verify_infra
+[05:55:21] watching cmd/verify_mikrotik
+[05:55:21] watching cmd/worker
+[05:55:21] watching configs
+[05:55:21] watching configs/database
+[05:55:21] watching configs/env
+[05:55:21] !exclude deployments
+[05:55:21] !exclude docs
+[05:55:21] watching internal
+[05:55:21] watching internal/alert
+[05:55:21] watching internal/alert/engine
+[05:55:21] watching internal/alert/handler
+[05:55:21] watching internal/alert/repository
+[05:55:21] watching internal/alert/service
+[05:55:21] watching internal/analytics
+[05:55:21] watching internal/analytics/handler
+[05:55:21] watching internal/analytics/processor
+[05:55:21] watching internal/analytics/service
+[05:55:21] watching internal/api-gateway
+[05:55:21] watching internal/api-gateway/handler
+[05:55:21] watching internal/api-gateway/middleware
+[05:55:21] watching internal/api-gateway/router
+[05:55:21] watching internal/collector
+[05:55:21] watching internal/collector/repository
+[05:55:21] watching internal/collector/scheduler
+[05:55:21] watching internal/collector/service
+[05:55:21] watching internal/common
+[05:55:21] watching internal/common/adapter
+[05:55:21] watching internal/common/auth
+[05:55:21] watching internal/common/config
+[05:55:21] watching internal/common/database
+[05:55:21] watching internal/common/errors
+[05:55:21] watching internal/common/logger
+[05:55:21] watching internal/common/model
+[05:55:21] watching internal/common/queue
+[05:55:21] watching internal/common/validator
+[05:55:21] watching internal/config
+[05:55:21] watching internal/config/handler
+[05:55:21] watching internal/config/repository
+[05:55:21] watching internal/config/service
+[05:55:21] watching internal/config/versioning
+[05:55:21] watching internal/config_mgt
+[05:55:21] watching internal/device
+[05:55:21] watching internal/device/handler
+[05:55:21] watching internal/device/model
+[05:55:21] watching internal/device/repository
+[05:55:21] watching internal/device/service
+[05:55:21] watching internal/features
+[05:55:21] watching internal/features/execution
+[05:55:21] watching internal/features/monitoring
+[05:55:21] watching internal/features/olt
+[05:55:21] watching internal/notification
+[05:55:21] watching internal/notification/handler
+[05:55:21] watching internal/notification/sender
+[05:55:21] watching internal/notification/service
+[05:55:21] watching internal/worker
+[05:55:21] watching internal/worker/handler
+[05:55:21] watching internal/worker/parser
+[05:55:21] watching internal/worker/protocols
+[05:55:21] watching internal/worker/protocols/mikrotik
+[05:55:21] watching internal/worker/protocols/snmp
+[05:55:21] watching internal/worker/protocols/snmp/zte
+[05:55:21] watching internal/worker/protocols/ssh
+[05:55:21] watching internal/worker/protocols/telnet
+[05:55:21] watching internal/worker/protocols/tr069
+[05:55:21] watching pkg
+[05:55:21] watching pkg/crypto
+[05:55:21] watching pkg/database
+[05:55:21] watching pkg/database/influxdb
+[05:55:21] watching pkg/database/postgres
+[05:55:21] watching pkg/database/redis
+[05:55:21] watching pkg/logging
+[05:55:21] watching pkg/messagequeue
+[05:55:21] watching pkg/messagequeue/nats
+[05:55:21] watching pkg/messagequeue/rabbitmq
+[05:55:21] watching pkg/metrics
+[05:55:21] watching pkg/utils
+[05:55:21] watching scripts
+[05:55:21] watching scripts/migrations
+[05:55:21] watching scripts/seed
+[05:55:21] watching test
+[05:55:21] watching test/e2e
+[05:55:21] watching test/fixtures
+[05:55:21] watching test/integration
+[05:55:21] !exclude tmp
+[05:55:21] building...
+[05:55:22] running...
+2026/02/20 05:55:23 Running database migrations...
+2026/02/20 05:55:23 Monitoring Scheduler started with interval 1m0s
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /health                   --> github.com/yourorg/nms-go/internal/api-gateway.NewRouter.func1 (3 handlers)
+[GIN-debug] GET    /api/v1/devices           --> github.com/yourorg/nms-go/internal/device/handler.(*DeviceHandler).ListDevices-fm (3 handlers)
+[GIN-debug] POST   /api/v1/devices           --> github.com/yourorg/nms-go/internal/device/handler.(*DeviceHandler).RegisterDevice-fm (3 handlers)
+[GIN-debug] GET    /api/v1/devices/:id       --> github.com/yourorg/nms-go/internal/device/handler.(*DeviceHandler).GetDevice-fm (3 handlers)
+[GIN-debug] POST   /api/v1/config/execute    --> github.com/yourorg/nms-go/internal/config_mgt.(*ConfigHandler).ExecuteCommand-fm (3 handlers)
+[GIN-debug] POST   /api/v1/realtime/execute  --> github.com/yourorg/nms-go/internal/features/execution.(*ExecutionHandler).ExecuteCommand-fm (3 handlers)
+[GIN-debug] POST   /api/v1/realtime/stats    --> github.com/yourorg/nms-go/internal/features/execution.(*ExecutionHandler).GetStats-fm (3 handlers)
+[GIN-debug] POST   /api/v1/inventory/sync    --> github.com/yourorg/nms-go/internal/features/monitoring.(*Handler).SyncInventory-fm (3 handlers)
+[GIN-debug] POST   /api/v1/olt/system        --> github.com/yourorg/nms-go/internal/features/olt.(*Handler).GetSystemMetrics-fm (3 handlers)
+[GIN-debug] POST   /api/v1/olt/pon-ports     --> github.com/yourorg/nms-go/internal/features/olt.(*Handler).GetPONPorts-fm (3 handlers)
+[GIN-debug] POST   /api/v1/olt/onts          --> github.com/yourorg/nms-go/internal/features/olt.(*Handler).GetONTs-fm (3 handlers)
+[GIN-debug] POST   /api/v1/olt/ont-status    --> github.com/yourorg/nms-go/internal/features/olt.(*Handler).GetONTStatus-fm (3 handlers)
+2026/02/20 05:55:23 Starting API Gateway on :9090
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :9090
+[GIN] 2026/02/20 - 05:55:25 | 200 |   14.915932ms |      172.22.0.5 | POST     "/api/v1/realtime/stats"
+[GIN] 2026/02/20 - 05:55:30 | 200 |   15.387983ms |      172.22.0.5 | POST     "/api/v1/realtime/stats"
+[GIN] 2026/02/20 - 05:55:35 | 200 |   11.651208ms |      172.22.0.5 | POST     "/api/v1/realtime/stats"
+[GIN] 2026/02/20 - 05:55:40 | 200 |   14.656775ms |      172.22.0.5 | POST     "/api/v1/realtime/stats"
+[GIN] 2026/02/20 - 05:55:45 | 200 |   12.602931ms |      172.22.0.5 | POST     "/api/v1/realtime/stats"
+[GIN] 2026/02/20 - 05:55:50 | 200 |   18.308385ms |      172.22.0.5 | POST     "/api/v1/realtime/stats"
+[GIN] 2026/02/20 - 05:55:55 | 200 |   15.187423ms |      172.22.0.5 | POST     "/api/v1/realtime/stats"
+[GIN] 2026/02/20 - 05:56:00 | 200 |   10.135003ms |      172.22.0.5 | POST     "/api/v1/realtime/stats"
+[GIN] 2026/02/20 - 05:56:05 | 200 |   11.607304ms |      172.22.0.5 | POST     "/api/v1/realtime/stats"
+[GIN] 2026/02/20 - 05:56:10 | 200 |   12.627217ms |      172.22.0.5 | POST     "/api/v1/realtime/stats"
+[GIN] 2026/02/20 - 05:56:15 | 200 |   10.594735ms |      172.22.0.5 | POST     "/api/v1/realtime/stats"
+[GIN] 2026/02/20 - 05:56:20 | 200 |    15.47703ms |      172.22.0.5 | POST     "/api/v1/realtime/stats"
+2026/02/20 05:56:23 Starting collection for 0 devices
+[GIN] 2026/02/20 - 05:56:25 | 200 |    15.91953ms |      172.22.0.5 | POST     "/api/v1/realtime/stats"
+[GIN] 2026/02/20 - 05:56:30 | 200 |   13.688188ms |      172.22.0.5 | POST     "/api/v1/realtime/stats"
+[GIN] 2026/02/20 - 05:56:56 | 200 |  3.052764481s |      172.22.0.5 | POST     "/api/v1/realtime/execute"
+2026/02/20 05:57:23 Starting collection for 0 devices
+[GIN] 2026/02/20 - 05:57:45 | 200 |         2m14s |             ::1 | POST     "/api/v1/realtime/stats"
+2026/02/20 05:58:23 Starting collection for 0 devices
+2026/02/20 05:59:23 Starting collection for 0 devices
+[GIN] 2026/02/20 - 05:59:31 | 200 |   19.680689ms |     10.70.103.4 | POST     "/api/v1/realtime/stats"
+[GIN] 2026/02/20 - 05:59:46 | 200 |  3.048964859s |      172.22.0.5 | POST     "/api/v1/realtime/execute"
