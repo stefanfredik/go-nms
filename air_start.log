@@ -156,3 +156,244 @@ Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-
 2026/02/20 05:59:23 Starting collection for 0 devices
 [GIN] 2026/02/20 - 05:59:31 | 200 |   19.680689ms |     10.70.103.4 | POST     "/api/v1/realtime/stats"
 [GIN] 2026/02/20 - 05:59:46 | 200 |  3.048964859s |      172.22.0.5 | POST     "/api/v1/realtime/execute"
+2026/02/20 06:00:23 Starting collection for 0 devices
+[GIN] 2026/02/20 - 06:00:47 | 200 |  3.056168608s |      172.22.0.5 | POST     "/api/v1/realtime/execute"
+[GIN] 2026/02/20 - 06:01:14 | 200 |   14.743282ms |      172.22.0.5 | POST     "/api/v1/realtime/stats"
+[GIN] 2026/02/20 - 06:01:22 | 200 |    10.96085ms |      172.22.0.5 | POST     "/api/v1/realtime/stats"
+2026/02/20 06:01:23 Starting collection for 0 devices
+[GIN] 2026/02/20 - 06:01:27 | 200 |   13.738501ms |      172.22.0.5 | POST     "/api/v1/realtime/stats"
+[GIN] 2026/02/20 - 06:01:32 | 200 |   14.777216ms |      172.22.0.5 | POST     "/api/v1/realtime/stats"
+[GIN] 2026/02/20 - 06:01:36 | 200 |   13.415398ms |      172.22.0.5 | POST     "/api/v1/realtime/stats"
+[GIN] 2026/02/20 - 06:01:42 | 200 |    9.584193ms |      172.22.0.5 | POST     "/api/v1/realtime/stats"
+[GIN] 2026/02/20 - 06:01:46 | 200 |   12.476068ms |      172.22.0.5 | POST     "/api/v1/realtime/stats"
+[GIN] 2026/02/20 - 06:01:51 | 200 |   10.962946ms |      172.22.0.5 | POST     "/api/v1/realtime/stats"
+[GIN] 2026/02/20 - 06:01:57 | 200 |   31.640634ms |      172.22.0.5 | POST     "/api/v1/realtime/stats"
+[GIN] 2026/02/20 - 06:02:01 | 200 |   12.669757ms |      172.22.0.5 | POST     "/api/v1/realtime/stats"
+[GIN] 2026/02/20 - 06:02:06 | 200 |   12.235233ms |      172.22.0.5 | POST     "/api/v1/realtime/stats"
+[GIN] 2026/02/20 - 06:02:12 | 200 |   11.698687ms |      172.22.0.5 | POST     "/api/v1/realtime/stats"
+[GIN] 2026/02/20 - 06:02:16 | 200 |   10.855943ms |      172.22.0.5 | POST     "/api/v1/realtime/stats"
+[GIN] 2026/02/20 - 06:02:22 | 200 |    13.73976ms |      172.22.0.5 | POST     "/api/v1/realtime/stats"
+2026/02/20 06:02:23 Starting collection for 0 devices
+[GIN] 2026/02/20 - 06:02:27 | 200 |   13.811993ms |      172.22.0.5 | POST     "/api/v1/realtime/stats"
+[GIN] 2026/02/20 - 06:02:32 | 200 |   11.161205ms |      172.22.0.5 | POST     "/api/v1/realtime/stats"
+[GIN] 2026/02/20 - 06:02:37 | 200 |   20.118112ms |      172.22.0.5 | POST     "/api/v1/realtime/stats"
+[GIN] 2026/02/20 - 06:02:42 | 200 |   11.291206ms |      172.22.0.5 | POST     "/api/v1/realtime/stats"
+[GIN] 2026/02/20 - 06:02:46 | 200 |    9.999391ms |      172.22.0.5 | POST     "/api/v1/realtime/stats"
+[GIN] 2026/02/20 - 06:02:51 | 200 |   11.699673ms |      172.22.0.5 | POST     "/api/v1/realtime/stats"
+[GIN] 2026/02/20 - 06:02:57 | 200 |    13.70297ms |      172.22.0.5 | POST     "/api/v1/realtime/stats"
+[GIN] 2026/02/20 - 06:03:02 | 200 |   19.457278ms |      172.22.0.5 | POST     "/api/v1/realtime/stats"
+[GIN] 2026/02/20 - 06:03:07 | 200 |   13.579585ms |      172.22.0.5 | POST     "/api/v1/realtime/stats"
+[GIN] 2026/02/20 - 06:03:12 | 200 |   12.703647ms |      172.22.0.5 | POST     "/api/v1/realtime/stats"
+[GIN] 2026/02/20 - 06:03:16 | 200 |    11.02889ms |      172.22.0.5 | POST     "/api/v1/realtime/stats"
+[GIN] 2026/02/20 - 06:03:22 | 200 |   10.513308ms |      172.22.0.5 | POST     "/api/v1/realtime/stats"
+2026/02/20 06:03:23 Starting collection for 0 devices
+[GIN] 2026/02/20 - 06:03:27 | 200 |   11.948148ms |      172.22.0.5 | POST     "/api/v1/realtime/stats"
+[GIN] 2026/02/20 - 06:03:32 | 200 |    13.23654ms |      172.22.0.5 | POST     "/api/v1/realtime/stats"
+[GIN] 2026/02/20 - 06:03:37 | 200 |   15.730088ms |      172.22.0.5 | POST     "/api/v1/realtime/stats"
+[GIN] 2026/02/20 - 06:03:42 | 200 |   15.241647ms |      172.22.0.5 | POST     "/api/v1/realtime/stats"
+[GIN] 2026/02/20 - 06:03:46 | 200 |   13.791181ms |      172.22.0.5 | POST     "/api/v1/realtime/stats"
+[GIN] 2026/02/20 - 06:03:51 | 200 |   15.796366ms |      172.22.0.5 | POST     "/api/v1/realtime/stats"
+[GIN] 2026/02/20 - 06:03:57 | 200 |   10.084757ms |      172.22.0.5 | POST     "/api/v1/realtime/stats"
+[GIN] 2026/02/20 - 06:04:02 | 200 |   19.391239ms |      172.22.0.5 | POST     "/api/v1/realtime/stats"
+[GIN] 2026/02/20 - 06:04:06 | 200 |   11.684966ms |      172.22.0.5 | POST     "/api/v1/realtime/stats"
+[GIN] 2026/02/20 - 06:04:12 | 200 |   12.676421ms |      172.22.0.5 | POST     "/api/v1/realtime/stats"
+[GIN] 2026/02/20 - 06:04:17 | 200 |   26.544471ms |      172.22.0.5 | POST     "/api/v1/realtime/stats"
+[GIN] 2026/02/20 - 06:04:21 | 200 |   12.789177ms |      172.22.0.5 | POST     "/api/v1/realtime/stats"
+2026/02/20 06:04:23 Starting collection for 0 devices
+[GIN] 2026/02/20 - 06:04:26 | 200 |    14.48762ms |      172.22.0.5 | POST     "/api/v1/realtime/stats"
+[GIN] 2026/02/20 - 06:04:31 | 200 |   10.363079ms |      172.22.0.5 | POST     "/api/v1/realtime/stats"
+2026/02/20 06:05:23 Starting collection for 0 devices
+2026/02/20 06:06:23 Starting collection for 0 devices
+2026/02/20 06:07:23 Starting collection for 0 devices
+2026/02/20 06:08:23 Starting collection for 0 devices
+2026/02/20 06:09:23 Starting collection for 0 devices
+2026/02/20 06:10:23 Starting collection for 0 devices
+2026/02/20 06:11:23 Starting collection for 0 devices
+2026/02/20 06:12:23 Starting collection for 0 devices
+2026/02/20 06:13:23 Starting collection for 0 devices
+2026/02/20 06:14:23 Starting collection for 0 devices
+2026/02/20 06:15:23 Starting collection for 0 devices
+2026/02/20 06:16:23 Starting collection for 0 devices
+2026/02/20 06:17:23 Starting collection for 0 devices
+2026/02/20 06:18:23 Starting collection for 0 devices
+2026/02/20 06:19:23 Starting collection for 0 devices
+2026/02/20 06:20:23 Starting collection for 0 devices
+2026/02/20 06:21:23 Starting collection for 0 devices
+2026/02/20 06:22:23 Starting collection for 0 devices
+2026/02/20 06:23:23 Starting collection for 0 devices
+2026/02/20 06:24:23 Starting collection for 0 devices
+2026/02/20 06:25:23 Starting collection for 0 devices
+2026/02/20 06:26:23 Starting collection for 0 devices
+2026/02/20 06:27:23 Starting collection for 0 devices
+2026/02/20 06:28:23 Starting collection for 0 devices
+2026/02/20 06:29:23 Starting collection for 0 devices
+2026/02/20 06:30:23 Starting collection for 0 devices
+2026/02/20 06:31:23 Starting collection for 0 devices
+2026/02/20 06:32:23 Starting collection for 0 devices
+2026/02/20 06:33:23 Starting collection for 0 devices
+2026/02/20 06:34:23 Starting collection for 0 devices
+2026/02/20 06:35:23 Starting collection for 0 devices
+2026/02/20 06:36:23 Starting collection for 0 devices
+2026/02/20 06:37:23 Starting collection for 0 devices
+2026/02/20 06:38:23 Starting collection for 0 devices
+2026/02/20 06:39:23 Starting collection for 0 devices
+2026/02/20 06:40:23 Starting collection for 0 devices
+2026/02/20 06:41:23 Starting collection for 0 devices
+2026/02/20 06:42:23 Starting collection for 0 devices
+2026/02/20 06:43:23 Starting collection for 0 devices
+2026/02/20 06:44:23 Starting collection for 0 devices
+2026/02/20 06:45:23 Starting collection for 0 devices
+2026/02/20 06:46:23 Starting collection for 0 devices
+2026/02/20 06:47:23 Starting collection for 0 devices
+2026/02/20 06:48:23 Starting collection for 0 devices
+2026/02/20 06:49:23 Starting collection for 0 devices
+2026/02/20 06:50:23 Starting collection for 0 devices
+2026/02/20 06:51:23 Starting collection for 0 devices
+2026/02/20 06:52:23 Starting collection for 0 devices
+2026/02/20 06:53:23 Starting collection for 0 devices
+2026/02/20 06:54:23 Starting collection for 0 devices
+2026/02/20 06:55:23 Starting collection for 0 devices
+2026/02/20 06:56:23 Starting collection for 0 devices
+[GIN] 2026/02/20 - 06:56:41 | 200 |   19.038165ms |      172.22.0.5 | POST     "/api/v1/realtime/stats"
+[GIN] 2026/02/20 - 06:56:46 | 200 |  3.013113753s |      172.22.0.5 | POST     "/api/v1/realtime/execute"
+[GIN] 2026/02/20 - 06:56:55 | 200 |   11.302543ms |      172.22.0.5 | POST     "/api/v1/realtime/stats"
+[GIN] 2026/02/20 - 06:57:00 | 200 |    12.58591ms |      172.22.0.5 | POST     "/api/v1/realtime/stats"
+[GIN] 2026/02/20 - 06:57:03 | 200 |   17.558799ms |      172.22.0.5 | POST     "/api/v1/realtime/stats"
+[GIN] 2026/02/20 - 06:57:12 | 200 |   74.425305ms |      172.22.0.5 | POST     "/api/v1/realtime/execute"
+2026/02/20 06:57:23 Starting collection for 0 devices
+2026/02/20 06:58:23 Starting collection for 0 devices
+2026/02/20 06:59:23 Starting collection for 0 devices
+2026/02/20 07:00:23 Starting collection for 0 devices
+2026/02/20 07:01:23 Starting collection for 0 devices
+2026/02/20 07:02:23 Starting collection for 0 devices
+2026/02/20 07:03:23 Starting collection for 0 devices
+2026/02/20 07:04:23 Starting collection for 0 devices
+2026/02/20 07:05:23 Starting collection for 0 devices
+2026/02/20 07:06:23 Starting collection for 0 devices
+2026/02/20 07:07:23 Starting collection for 0 devices
+2026/02/20 07:08:23 Starting collection for 0 devices
+2026/02/20 07:09:23 Starting collection for 0 devices
+2026/02/20 07:10:23 Starting collection for 0 devices
+2026/02/20 07:11:23 Starting collection for 0 devices
+2026/02/20 07:12:23 Starting collection for 0 devices
+2026/02/20 07:13:23 Starting collection for 0 devices
+2026/02/20 07:14:23 Starting collection for 0 devices
+2026/02/20 07:15:23 Starting collection for 0 devices
+2026/02/20 07:16:23 Starting collection for 0 devices
+2026/02/20 07:17:23 Starting collection for 0 devices
+2026/02/20 07:18:23 Starting collection for 0 devices
+2026/02/20 07:19:23 Starting collection for 0 devices
+2026/02/20 07:20:23 Starting collection for 0 devices
+2026/02/20 07:21:23 Starting collection for 0 devices
+2026/02/20 07:22:23 Starting collection for 0 devices
+2026/02/20 07:23:23 Starting collection for 0 devices
+2026/02/20 07:24:23 Starting collection for 0 devices
+2026/02/20 07:25:23 Starting collection for 0 devices
+2026/02/20 07:26:23 Starting collection for 0 devices
+[GIN] 2026/02/20 - 07:26:58 | 200 |   28.183938ms |      172.22.0.5 | POST     "/api/v1/realtime/stats"
+[GIN] 2026/02/20 - 07:27:03 | 200 |   10.731792ms |      172.22.0.5 | POST     "/api/v1/realtime/stats"
+[GIN] 2026/02/20 - 07:27:08 | 200 |   12.305407ms |      172.22.0.5 | POST     "/api/v1/realtime/stats"
+[GIN] 2026/02/20 - 07:27:13 | 200 |   12.806862ms |      172.22.0.5 | POST     "/api/v1/realtime/stats"
+[GIN] 2026/02/20 - 07:27:18 | 200 |    10.59853ms |      172.22.0.5 | POST     "/api/v1/realtime/stats"
+2026/02/20 07:27:23 Starting collection for 0 devices
+[GIN] 2026/02/20 - 07:27:23 | 200 |   17.678239ms |      172.22.0.5 | POST     "/api/v1/realtime/stats"
+[GIN] 2026/02/20 - 07:27:33 | 200 |  3.023864952s |      172.22.0.5 | POST     "/api/v1/realtime/execute"
+[GIN] 2026/02/20 - 07:27:52 | 200 |   81.531685ms |      172.22.0.5 | POST     "/api/v1/realtime/execute"
+2026/02/20 07:28:23 Starting collection for 0 devices
+2026/02/20 07:29:23 Starting collection for 0 devices
+2026/02/20 07:30:23 Starting collection for 0 devices
+2026/02/20 07:31:23 Starting collection for 0 devices
+2026/02/20 07:32:23 Starting collection for 0 devices
+[GIN] 2026/02/20 - 07:33:09 | 200 |  5.530660854s |      172.22.0.5 | POST     "/api/v1/olt/system"
+[GIN] 2026/02/20 - 07:33:09 | 200 |  148.271048ms |      172.22.0.5 | POST     "/api/v1/olt/pon-ports"
+[GIN] 2026/02/20 - 07:33:09 | 200 |   52.308185ms |      172.22.0.5 | POST     "/api/v1/olt/onts"
+[GIN] 2026/02/20 - 07:33:14 | 200 |  5.207616664s |      172.22.0.5 | POST     "/api/v1/olt/system"
+[GIN] 2026/02/20 - 07:33:14 | 200 |  150.232801ms |      172.22.0.5 | POST     "/api/v1/olt/pon-ports"
+[GIN] 2026/02/20 - 07:33:14 | 200 |   50.292256ms |      172.22.0.5 | POST     "/api/v1/olt/onts"
+2026/02/20 07:33:23 Starting collection for 0 devices
+2026/02/20 07:34:23 Starting collection for 0 devices
+[GIN] 2026/02/20 - 07:34:25 | 500 |         1m45s |      172.22.0.5 | POST     "/api/v1/olt/system"
+[GIN] 2026/02/20 - 07:34:40 | 500 |         1m45s |      172.22.0.5 | POST     "/api/v1/olt/system"
+[GIN] 2026/02/20 - 07:35:17 | 200 |  5.138002936s |      172.22.0.5 | POST     "/api/v1/olt/system"
+[GIN] 2026/02/20 - 07:35:17 | 200 |  147.980025ms |      172.22.0.5 | POST     "/api/v1/olt/pon-ports"
+[GIN] 2026/02/20 - 07:35:17 | 200 |   95.452251ms |      172.22.0.5 | POST     "/api/v1/olt/onts"
+[GIN] 2026/02/20 - 07:35:22 | 200 |  5.219355676s |      172.22.0.5 | POST     "/api/v1/olt/system"
+[GIN] 2026/02/20 - 07:35:22 | 200 |  103.859974ms |      172.22.0.5 | POST     "/api/v1/olt/pon-ports"
+[GIN] 2026/02/20 - 07:35:23 | 200 |   55.013601ms |      172.22.0.5 | POST     "/api/v1/olt/onts"
+2026/02/20 07:35:23 Starting collection for 0 devices
+2026/02/20 07:36:23 Starting collection for 0 devices
+2026/02/20 07:37:23 Starting collection for 0 devices
+2026/02/20 07:38:23 Starting collection for 0 devices
+2026/02/20 07:39:23 Starting collection for 0 devices
+2026/02/20 07:40:23 Starting collection for 0 devices
+2026/02/20 07:41:23 Starting collection for 0 devices
+2026/02/20 07:42:23 Starting collection for 0 devices
+2026/02/20 07:43:23 Starting collection for 0 devices
+2026/02/20 07:44:23 Starting collection for 0 devices
+2026/02/20 07:45:23 Starting collection for 0 devices
+2026/02/20 07:46:23 Starting collection for 0 devices
+2026/02/20 07:47:23 Starting collection for 0 devices
+2026/02/20 07:48:23 Starting collection for 0 devices
+2026/02/20 07:49:23 Starting collection for 0 devices
+2026/02/20 07:50:23 Starting collection for 0 devices
+[GIN] 2026/02/20 - 07:50:47 | 200 |  22.45304444s |      172.22.0.5 | POST     "/api/v1/olt/system"
+[GIN] 2026/02/20 - 07:50:50 | 200 | 10.147374525s |      172.22.0.5 | POST     "/api/v1/olt/system"
+[GIN] 2026/02/20 - 07:50:50 | 200 |   118.83665ms |      172.22.0.5 | POST     "/api/v1/olt/pon-ports"
+[GIN] 2026/02/20 - 07:50:50 | 200 |    48.86277ms |      172.22.0.5 | POST     "/api/v1/olt/onts"
+[GIN] 2026/02/20 - 07:51:11 | 500 |         1m45s |      172.22.0.5 | POST     "/api/v1/olt/system"
+2026/02/20 07:51:23 Starting collection for 0 devices
+[GIN] 2026/02/20 - 07:51:26 | 500 |         1m45s |      172.22.0.5 | POST     "/api/v1/olt/system"
+2026/02/20 07:52:23 Starting collection for 0 devices
+2026/02/20 07:53:23 Starting collection for 0 devices
+2026/02/20 07:54:23 Starting collection for 0 devices
+2026/02/20 07:55:23 Starting collection for 0 devices
+2026/02/20 07:56:23 Starting collection for 0 devices
+2026/02/20 07:57:23 Starting collection for 0 devices
+2026/02/20 07:58:23 Starting collection for 0 devices
+2026/02/20 07:59:23 Starting collection for 0 devices
+2026/02/20 08:00:23 Starting collection for 0 devices
+2026/02/20 08:01:23 Starting collection for 0 devices
+2026/02/20 08:02:23 Starting collection for 0 devices
+2026/02/20 08:03:23 Starting collection for 0 devices
+2026/02/20 08:04:23 Starting collection for 0 devices
+2026/02/20 08:05:23 Starting collection for 0 devices
+2026/02/20 08:06:23 Starting collection for 0 devices
+2026/02/20 08:07:23 Starting collection for 0 devices
+2026/02/20 08:08:23 Starting collection for 0 devices
+2026/02/20 08:09:23 Starting collection for 0 devices
+2026/02/20 08:10:23 Starting collection for 0 devices
+2026/02/20 08:11:23 Starting collection for 0 devices
+2026/02/20 08:12:23 Starting collection for 0 devices
+2026/02/20 08:13:23 Starting collection for 0 devices
+2026/02/20 08:14:23 Starting collection for 0 devices
+2026/02/20 08:15:23 Starting collection for 0 devices
+2026/02/20 08:16:23 Starting collection for 0 devices
+2026/02/20 08:17:23 Starting collection for 0 devices
+2026/02/20 08:18:23 Starting collection for 0 devices
+2026/02/20 08:19:23 Starting collection for 0 devices
+2026/02/20 08:20:23 Starting collection for 0 devices
+2026/02/20 08:21:23 Starting collection for 0 devices
+[GIN] 2026/02/20 - 08:21:39 | 400 |     396.018µs |    10.70.103.33 | POST     "/api/v1/realtime/stats"
+[GIN] 2026/02/20 - 08:21:44 | 400 |     170.569µs |    10.70.103.33 | POST     "/api/v1/realtime/stats"
+[GIN] 2026/02/20 - 08:22:20 | 200 |   30.486156ms |    10.70.103.33 | POST     "/api/v1/realtime/stats"
+2026/02/20 08:22:23 Starting collection for 0 devices
+[GIN] 2026/02/20 - 08:23:01 | 200 |         2m12s |    10.70.103.33 | POST     "/api/v1/realtime/stats"
+[GIN] 2026/02/20 - 08:23:14 | 200 |         2m14s |    10.70.103.33 | POST     "/api/v1/realtime/stats"
+[GIN] 2026/02/20 - 08:23:18 | 200 |         2m15s |    10.70.103.33 | POST     "/api/v1/realtime/stats"
+2026/02/20 08:23:23 Starting collection for 0 devices
+[GIN] 2026/02/20 - 08:23:26 | 200 |         2m13s |    10.70.103.33 | POST     "/api/v1/realtime/stats"
+[GIN] 2026/02/20 - 08:23:38 | 200 |         2m15s |    10.70.103.33 | POST     "/api/v1/realtime/stats"
+[GIN] 2026/02/20 - 08:24:19 | 200 |         2m12s |    10.70.103.33 | POST     "/api/v1/realtime/stats"
+2026/02/20 08:24:23 Starting collection for 0 devices
+[GIN] 2026/02/20 - 08:24:32 | 200 |         2m14s |    10.70.103.33 | POST     "/api/v1/realtime/stats"
+2026/02/20 08:25:23 Starting collection for 0 devices
+2026/02/20 08:26:23 Starting collection for 0 devices
+2026/02/20 08:27:23 Starting collection for 0 devices
+2026/02/20 08:28:23 Starting collection for 0 devices
+2026/02/20 08:29:23 Starting collection for 0 devices
+2026/02/20 08:30:23 Starting collection for 0 devices
+2026/02/20 08:31:23 Starting collection for 0 devices
+2026/02/20 08:32:23 Starting collection for 0 devices
+2026/02/20 08:33:23 Starting collection for 0 devices
+2026/02/20 08:34:23 Starting collection for 0 devices
+2026/02/20 08:35:23 Starting collection for 0 devices
